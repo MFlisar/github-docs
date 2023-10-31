@@ -90,6 +90,8 @@ https://github.com/MFlisar/Lumberjack/blob/ca0f88f0d6810b7a9d0cd99bb932649c84783
 
 {{ page.meta.libray }}
 
+{% include 'jitpack_setup.md' %}
+
 Lumberjack...
 
 :simple-github:
