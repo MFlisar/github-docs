@@ -1,3 +1,12 @@
+[![Release](https://jitpack.io/v/MFlisar/Lumberjack.svg)](https://jitpack.io/#MFlisar/Lumberjack)
+![License](https://img.shields.io/github/license/MFlisar/Lumberjack)
+
+# About
+
+# Showcase
+
+# features
+
 Lumberjack...
 
 :simple-github:
@@ -14,9 +23,37 @@ Lumberjack...
 
 [Send :fontawesome-solid-paper-plane:](#){ .md-button }
 
-```koltin
-val x = 0
-val y = 10
+```kotlin
+class App : Application() {
+
+    override fun onCreate() {
+      
+      // ------------------------
+      // Variant 1: the lumberjack version
+      // ------------------------
+
+      // 1) install the implemantion
+      L.init(LumberjackLogger)
+      
+      // 2) install loggers
+      L.plant(ConsoleLogger())
+      val setup = FileLoggerSetup.Daily(this)
+      L.plant(FileLogger(setup))
+
+      // ------------------------
+      // Variant 2: the timber version
+      // ------------------------
+
+      // 1) install the implemantion
+      L.init(TimberLogger)
+
+      // 2) install loggers (trees) 
+      Timber.plant(ConsoleTree())
+      val setup = FileLoggingSetup.DateFiles(this  )
+      Timber.plant(FileLoggingTree(setup))
+    }
+
+}
 ```
 
 ``` yaml
@@ -28,6 +65,12 @@ theme:
 1.  :man_raising_hand: I'm a code annotation! I can contain `code`, __formatted
     text__, images, ... basically anything that can be written in Markdown.
 	
+Lorem ipsum dolor sit amet, (1) consectetur adipiscing elit.
+{ .annotate }
+
+1.  :man_raising_hand: I'm an annotation! I can contain `code`, __formatted
+    text__, images, ... basically anything that can be expressed in Markdown.
+
 ``` yaml
 # (1)!
 ```
@@ -52,7 +95,7 @@ theme:
     nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
     massa, nec semper lorem quam in massa.
 	
-!!! warning "Phasellus posuere in sem (1) ut cursus"
+!!! warning annotate "Phasellus posuere in sem (1) ut cursus"
 
     Lorem ipsum dolor sit amet, consectetur (2) adipiscing elit. Nulla et
     euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
