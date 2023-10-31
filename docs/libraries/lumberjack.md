@@ -80,6 +80,10 @@ https://github.com/MFlisar/Lumberjack/blob/ca0f88f0d6810b7a9d0cd99bb932649c84783
 
 https://github.com/MFlisar/Lumberjack/blob/ca0f88f0d6810b7a9d0cd99bb932649c84783109/demo/src/main/java/com/michaelflisar/lumberjack/demo/DemoLogging.kt#L26-LL57
 
+``` title="DemoLogging.kt#L26"
+--8<-- "https://github.com/MFlisar/Lumberjack/blob/ca0f88f0d6810b7a9d0cd99bb932649c84783109/demo/src/main/java/com/michaelflisar/lumberjack/demo/DemoLogging.kt#L26"
+```
+
 Lumberjack...
 
 :simple-github:
