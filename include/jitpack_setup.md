@@ -10,14 +10,9 @@ Jitpack Setup:
 
 {% for group in page.meta.modules %}
 
-// Group: {{ group }}
+// Group: {{ group.name }}
 {% for module in group %}
 Module: {{ module }}
-{% endfor %}
-
-{% for key, value in group.items() %}
-    {{ key|e }}
-    {{ value|e }}
 {% endfor %}
 
 {% endfor %}
