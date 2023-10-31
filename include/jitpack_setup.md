@@ -9,10 +9,9 @@ Jitpack Setup:
 {{ page.meta.module_base_path }}
 
 {% for group in page.meta.modules %}
-
-// Group: {{ group.name }}
-{% for module in group %}
-Module: {{ module }}
+// Group: {{ group[0] }}
+{% for module in group[1] %}
+Module: {{ module[0] }}
 {% endfor %}
 
 {% endfor %}
