@@ -89,7 +89,7 @@ plugins:
   #- optimize
   #- privacy
   #- typeset
-  - macros
+  - macros:
       include_dir: include
         
 # Additional configuration
