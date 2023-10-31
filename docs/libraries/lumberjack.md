@@ -52,9 +52,9 @@ theme:
     nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
     massa, nec semper lorem quam in massa.
 	
-!!! warning "Phasellus posuere in sem ut cursus"
+!!! warning "Phasellus posuere in sem (1) ut cursus"
 
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+    Lorem ipsum dolor sit amet, consectetur (2) adipiscing elit. Nulla et
     euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
     purus auctor massa, nec semper lorem quam in massa.
 
