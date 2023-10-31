@@ -12,29 +12,21 @@ theme:
   name: material
   logo: assets/logo.png
   favicon: assets/logo.png
+  font:
+    text: Roboto
+    code: Roboto Mono
   palette:
-    - primary: black
-    - accent: green
-    # Palette toggle for light mode
-    - scheme: default
-      toggle:
-        icon: material/brightness-7 
-        name: Switch to dark mode
-    # Palette toggle for dark mode
-    - scheme: slate
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
-    # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
+      primary: black
+      accent: green
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-
-    # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
-      scheme: slate
+      scheme: slate    
+      primary: black
+      accent: green
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
@@ -48,6 +40,8 @@ theme:
     - navigation.sections
     #- navigation.expand
     - navigation.path
+    - navigation.footer
+    - navigation.indexes
     - toc.follow
     - toc.integrate
     - navigation.top
@@ -80,10 +74,10 @@ extra:
 nav:
   - Home: index.md
   - Libraries:
-    - 'Lumberjack': 'libraries/lumberjack.md'
-  - 'Compose Libraries':
-    - 'ComposeDialogs': 'libraries/composedialogs.md'
-    - 'ComposePreferences': 'libraries/composepreferences.md'
-    - 'ComposeChangelog': 'libraries/composechangelog.md'
-    - 'ComposeDebugDrawer': 'libraries/composedebugdrawer.md'
+    - Lumberjack: libraries/lumberjack.md
+  - Compose Libraries:
+    - ComposeDialogs: libraries/composedialogs.md
+    - ComposePreferences: libraries/composepreferences.md
+    - ComposeChangelog: libraries/composechangelog.md
+    - ComposeDebugDrawer: libraries/composedebugdrawer.md
   - About: about.md
