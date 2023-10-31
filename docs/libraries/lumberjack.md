@@ -4,20 +4,20 @@ library: Lumberjack
 module_base_path: com.github.MFlisar.Lumberjack
 modules:
   - core:
-    - core
+    core
   - lumberjack:
-    - implementation-lumberjack
-    - logger-console
-    - logger-file
-  - timber
-    - implementation-timber
-    - logger-timber-console
-    - logger-timber-file
-  - extensions
-    - extension-feedback
-    - extension-notification
-    - extension-viewer
-    - extension-composeviewer
+    implementation-lumberjack
+    logger-console
+    logger-file
+  - timber:
+    implementation-timber
+    logger-timber-console
+    logger-timber-file
+  - extensions:
+    extension-feedback
+    extension-notification
+    extension-viewer
+    extension-composeviewer
 ---
 
 [![Release](https://jitpack.io/v/MFlisar/Lumberjack.svg?style=flat-square)](https://jitpack.io/#MFlisar/Lumberjack)
