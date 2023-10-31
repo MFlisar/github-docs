@@ -4,10 +4,11 @@ icon: material/github
 
 [![Release](https://jitpack.io/v/MFlisar/Lumberjack.svg?style=flat-square)](https://jitpack.io/#MFlisar/Lumberjack)
 ![License](https://img.shields.io/github/license/MFlisar/Lumberjack?style=flat-square)
+[![Github](https://img.shields.io/badge/GitHub-black?style=flat-square&logo=github&logoColor=white)](https://github.com/MFlisar/Lumberjack)
 
 This is a full logging library with a build in way to log to **console**, **file** or any **custom** place as well as optional extensions to send a log file via mail or show it on the device.
 
-??? note "Timber"
+??? info "Timber Support"
 
     This library fully supports *Jack Whartons* [Timber](https://github.com/JakeWharton/timber){target=_blank} logging library (v4!). And was even based on it until *Lumberjack v6*. Beginning with *v6* I wrote new modules that work without timber which leads to a smaller and more versitile non timber version. I would advice you to use the non timber versions but if you want to you can simply use the timber modules I provide as well - whatever you prefer.
 
