@@ -58,6 +58,7 @@ plugins:
       htmlmin_opts:
         remove_comments: true
   - optimize
+  - privacy
         
 # Additional configuration
 extra:
