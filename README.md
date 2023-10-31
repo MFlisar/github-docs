@@ -8,7 +8,7 @@
 
 I do collect all my newer **open source documentations** inside a beautifully *MkDocs*[^1] based homepage styled with *Material for MkDocs*[^2] as a github page.
 
-The full documentation for this project with descriptions, images and much more can be found here:
+The full documentation for this project with **descriptions**, **images** and much **more** can be found here:
 
 [![Static Badge](https://img.shields.io/badge/Open%20Documentation-lightgreen?style=for-the-badge&logo=github&logoColor=black)](https://github.com/MFlisar/Lumberjack)
 
