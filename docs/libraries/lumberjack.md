@@ -5,11 +5,20 @@ icon: material/github
 [![Release](https://jitpack.io/v/MFlisar/Lumberjack.svg)](https://jitpack.io/#MFlisar/Lumberjack)
 ![License](https://img.shields.io/github/license/MFlisar/Lumberjack)
 
-## About
+This is a full logging library with a build in way to log to **console**, **file** or any **custom** place as well as optional extensions to send a log file via mail or show it on the device.
 
-## Showcase
+!!! note "Timber"
 
-## Features
+    This library fully supports *Jack Whartons* [Timber](https://github.com/JakeWharton/timber) logging library (v4!). And was even based on it until *Lumberjack v6*. Beginning with *v6* I wrote new modules that work without timber which leads to a smaller and more versitile non timber version. I would advice you to use the non timber versions but if you want to you can simply use the timber modules I provide as well - whatever you prefer.
+
+    A short summary on why I went this way can be found [here](README-TIMBER.md)
+	
+## :material-image: Example Outputs
+
+## :material-function: Features
+
+## :tools: Dependencies
+
 
 Lumberjack...
 
