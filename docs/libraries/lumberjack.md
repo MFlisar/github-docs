@@ -13,11 +13,29 @@ This is a full logging library with a build in way to log to **console**, **file
 
     A short summary on why I went this way can be found [here](README-TIMBER.md)
 	
-## :material-image: Example Outputs
+## :frame_photo: :camera: Example Outputs
 
-## :material-function: Features
+## :material-check-all: Features
 
-## :tools: Dependencies
+## :link: Dependencies
+
+## :tools: Setup
+
+### :simple-gradle: Gradle
+
+### :material-library: :material-code-tags: Library
+
+## :keyboard: Usage
+
+## :dna: Demo
+
+## :simple-gitextensions: :material-view-module: Modules and Extensions
+
+## :material-professional-hexagon: :green_book: Advanced Usage
+
+## :notepad_spiral: Notes
+
+
 
 
 Lumberjack...
