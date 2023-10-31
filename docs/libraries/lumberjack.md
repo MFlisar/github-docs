@@ -9,11 +9,11 @@ This is a full logging library with a build in way to log to **console**, **file
 
 !!! note "Timber"
 
-    This library fully supports *Jack Whartons* [Timber](https://github.com/JakeWharton/timber) logging library (v4!). And was even based on it until *Lumberjack v6*. Beginning with *v6* I wrote new modules that work without timber which leads to a smaller and more versitile non timber version. I would advice you to use the non timber versions but if you want to you can simply use the timber modules I provide as well - whatever you prefer.
+    This library fully supports *Jack Whartons* [Timber](https://github.com/JakeWharton/timber){target=_blank} logging library (v4!). And was even based on it until *Lumberjack v6*. Beginning with *v6* I wrote new modules that work without timber which leads to a smaller and more versitile non timber version. I would advice you to use the non timber versions but if you want to you can simply use the timber modules I provide as well - whatever you prefer.
 
     A short summary on why I went this way can be found [here](README-TIMBER.md)
 	
-## :frame_photo: :camera: Example Outputs
+## :camera: Example Outputs
 
 ## :material-check-all: Features
 
@@ -23,20 +23,19 @@ This is a full logging library with a build in way to log to **console**, **file
 
 ### :simple-gradle: Gradle
 
-### :material-library: :material-code-tags: Library
+### :material-code-tags: Library
 
 ## :keyboard: Usage
 
 ## :dna: Demo
 
-## :simple-gitextensions: :material-view-module: Modules and Extensions
+## :material-view-module: Modules and Extensions
 
-## :material-professional-hexagon: :green_book: Advanced Usage
+## :material-professional-hexagon: Advanced Usage
 
 ## :notepad_spiral: Notes
 
-
-
+# REST...
 
 Lumberjack...
 
