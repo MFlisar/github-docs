@@ -1,1 +1,1 @@
-# MKDocsExample - About
+# About
