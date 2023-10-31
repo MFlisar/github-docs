@@ -6,13 +6,11 @@
 
 ## :book: Documentation
 
-The full documentation with descriptions / images and much more can be found here:
+I do collect all my newer **open source documentations** inside a beautifully *MkDocs*[^1] based homepage styled with *Material for MkDocs*[^2] as a github page.
+
+The full documentation for this project with descriptions, images and much more can be found here:
 
 [Documention](https://mflisar.github.io/MKDocsExample/)
 
-:octocat:
-
-:github:
-
-:memo:
-
+[^1] [MKDocs](https://www.mkdocs.org/)
+[^2] [Material for MKDocs](https://www.mkdocs.org/)

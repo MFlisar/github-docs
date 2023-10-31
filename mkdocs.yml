@@ -92,7 +92,7 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/mflisar
-  generator: false
+  #generator: false
   
 # Page tree
 nav:
