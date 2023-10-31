@@ -1,17 +1,16 @@
+---
+icon: material/emoticon-happy 
+title: Lumberjack GitHub
+---
+
 [![Release](https://jitpack.io/v/MFlisar/Lumberjack.svg)](https://jitpack.io/#MFlisar/Lumberjack)
 ![License](https://img.shields.io/github/license/MFlisar/Lumberjack)
 
-# About
+## About
 
-## A
+## Showcase
 
-### C
-
-## B
-
-# Showcase
-
-# features
+## Features
 
 Lumberjack...
 
