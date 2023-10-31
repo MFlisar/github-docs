@@ -52,7 +52,7 @@ theme:
     
 markdown_extensions:
   - toc:
-      permalink: true
+      permalink: #
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -98,10 +98,11 @@ extra:
 nav:
   - Home: index.md
   - Libraries:
-    - Lumberjack: libraries/lumberjack.md
-  - Compose Libraries:
-    - ComposeDialogs: libraries/composedialogs.md
-    - ComposePreferences: libraries/composepreferences.md
-    - ComposeChangelog: libraries/composechangelog.md
-    - ComposeDebugDrawer: libraries/composedebugdrawer.md
+    - Common:
+      - Lumberjack: libraries/lumberjack.md
+    - Compose:
+      - ComposeDialogs: libraries/composedialogs.md
+      - ComposePreferences: libraries/composepreferences.md
+      - ComposeChangelog: libraries/composechangelog.md
+      - ComposeDebugDrawer: libraries/composedebugdrawer.md
   - About: about.md
