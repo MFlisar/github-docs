@@ -13,7 +13,6 @@ theme:
   logo: assets/logo.png
   favicon: assets/logo.png
   palette:
-    scheme: default
     primary: black
     accent: blue
     # Palette toggle for automatic mode
