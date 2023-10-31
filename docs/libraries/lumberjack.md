@@ -8,6 +8,12 @@ Lumberjack...
 | `PUT`       | :material-check-all: Update resource |
 | `DELETE`    | :material-close:     Delete resource |
 
+[Subscribe to our newsletter](#){ .md-button }
+
+[Subscribe to our newsletter](#){ .md-button .md-button--primary }
+
+[Send :fontawesome-solid-paper-plane:](#){ .md-button }
+
 ```koltin
 val x = 0
 val y = 10
@@ -18,11 +24,32 @@ theme:
   features:
     - content.code.annotate # (1)
 ```
+
+1.  :man_raising_hand: I'm a code annotation! I can contain `code`, __formatted
+    text__, images, ... basically anything that can be written in Markdown.
 	
 ``` yaml
-# (2)!
+# (1)!
 ```
 
+1.  Look ma, less line noise!
+
+!!! note annotate "Phasellus posuere in sem ut cursus (1)"
+
+    Lorem ipsum dolor sit amet, (2) consectetur adipiscing elit. Nulla et
+    euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+    purus auctor massa, nec semper lorem quam in massa.
+
+1.  :man_raising_hand: I'm an annotation!
+2.  :woman_raising_hand: I'm an annotation as well!
+
+=== "Tab 1"
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+=== "Tab 2"
+
+    Phasellus posuere in sem ut cursus (1)
 
 ``` py linenums="1"
 def bubble_sort(items):
@@ -115,6 +142,3 @@ classDiagram
 ```
 
 
-1.  :man_raising_hand: I'm a code annotation! I can contain `code`, __formatted
-    text__, images, ... basically anything that can be written in Markdown.
-2.  Look ma, less line noise!
