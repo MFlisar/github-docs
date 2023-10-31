@@ -1,0 +1,28 @@
+# Project information
+site_name: MKDocsExample
+site_url: https://mflisar.github.io/MKDocsExample/
+
+# Configuration
+#theme:
+#  name: material
+#  features:
+#    - navigation.tabs
+  
+# Plugins
+plugins:
+  - search
+#  - minify:
+#      minify_html: true
+#      htmlmin_opts:
+#        remove_comments: true
+        
+# Additional configuration
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/mflisar
+
+# Page tree
+nav:
+  - Home: index.md
+  - About: about.md
