@@ -8,12 +8,12 @@ Jitpack Setup:
 // base path
 {{ page.meta.module_base_path }}
 
-{% for key, value in page.meta %}
-// Group: {{ key }} - {{ value }}
+{% for key, value in page.meta.modules %}
+// Group1: {{ key }} - {{ value }}
 {% endfor %}
 
 {% for group in page.meta %}
-// Group: {{ group }}
+// Group2: {{ group }}
 {% endfor %}
 
 ```
