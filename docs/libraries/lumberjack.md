@@ -1,5 +1,6 @@
 ---
 icon: material/github
+library: Lumberjack
 ---
 
 [![Release](https://jitpack.io/v/MFlisar/Lumberjack.svg?style=flat-square)](https://jitpack.io/#MFlisar/Lumberjack)
@@ -83,6 +84,11 @@ https://github.com/MFlisar/Lumberjack/blob/ca0f88f0d6810b7a9d0cd99bb932649c84783
 ``` title="DemoLogging.kt#L26"
 --8<-- "https://github.com/MFlisar/Lumberjack/blob/ca0f88f0d6810b7a9d0cd99bb932649c84783109/demo/src/main/java/com/michaelflisar/lumberjack/demo/DemoLogging.kt#L26"
 ```
+
+{{ page.title }}
+
+
+{{ page.meta.libray }}
 
 Lumberjack...
 
