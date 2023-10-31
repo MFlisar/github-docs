@@ -24,4 +24,4 @@ jobs:
             mkdocs-material \
             mkdocs-minify-plugin \
             "mkdocs-material[imaging]"
-      - run: mkdocs gh-deploy
+      - run: mkdocs gh-deploy --force
