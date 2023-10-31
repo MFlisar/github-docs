@@ -3,18 +3,18 @@ site_name: MKDocsExample
 site_url: https://mflisar.github.io/MKDocsExample/
 
 # Configuration
-#theme:
-#  name: material
-#  features:
-#    - navigation.tabs
+theme:
+  name: material
+  features:
+    - navigation.tabs
   
 # Plugins
 plugins:
   - search
-#  - minify:
-#      minify_html: true
-#      htmlmin_opts:
-#        remove_comments: true
+  - minify:
+      minify_html: true
+      htmlmin_opts:
+        remove_comments: true
         
 # Additional configuration
 extra:
