@@ -13,8 +13,8 @@ theme:
   logo: assets/logo.png
   favicon: assets/logo.png
   palette:
-    primary: black
-    accent: blue
+    - primary: black
+    - accent: blue
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
       toggle:
