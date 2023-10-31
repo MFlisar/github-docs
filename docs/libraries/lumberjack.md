@@ -38,6 +38,10 @@ This is a full logging library with a build in way to log to **console**, **file
 
 # REST...
 
+https://github.com/MFlisar/Lumberjack/blob/ca0f88f0d6810b7a9d0cd99bb932649c84783109/demo/src/main/java/com/michaelflisar/lumberjack/demo/DemoLogging.kt#L26
+
+https://github.com/MFlisar/Lumberjack/blob/ca0f88f0d6810b7a9d0cd99bb932649c84783109/demo/src/main/java/com/michaelflisar/lumberjack/demo/DemoLogging.kt#L26-LL57
+
 Lumberjack...
 
 :simple-github:
