@@ -90,6 +90,7 @@ plugins:
   #- privacy
   #- typeset
   - macros
+      include_dir: include
         
 # Additional configuration
 extra:
