@@ -26,6 +26,44 @@ This is a full logging library with a build in way to log to **console**, **file
 
 ### :material-code-tags: Library
 
+=== "Lumberjack Version"
+
+    ```kotlin
+    class App : Application() {
+
+        override fun onCreate() {
+
+             // 1) install the implemantion
+             L.init(LumberjackLogger)
+             
+             // 2) install loggers
+             L.plant(ConsoleLogger())
+             val setup = FileLoggerSetup.Daily(this)
+             L.plant(FileLogger(setup))
+        }
+
+    }
+    ```
+    
+=== "Timber Version"
+
+    ```kotlin
+    class App : Application() {
+
+        override fun onCreate() {
+          
+             // 1) install the implemantion
+             L.init(TimberLogger)
+             
+             // 2) install loggers (trees) 
+             Timber.plant(ConsoleTree())
+             val setup = FileLoggingSetup.DateFiles(this  )
+             Timber.plant(FileLoggingTree(setup))
+        }
+
+    }
+    ```
+
 ## :keyboard: Usage
 
 ## :dna: Demo
