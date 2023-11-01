@@ -22,9 +22,7 @@ modules:
     - extension-composeviewer
 ---
 
-[![Release](https://jitpack.io/v/MFlisar/Lumberjack.svg?style=flat-square)](https://jitpack.io/#MFlisar/Lumberjack){target=_blank}
-![License](https://img.shields.io/github/license/MFlisar/Lumberjack?style=flat-square)
-[![Github](https://img.shields.io/badge/GitHub-black?style=flat-square&logo=github&logoColor=white)](https://github.com/MFlisar/Lumberjack){target=_blank}
+{% include 'badges_header.md' %}
 
 This is a **full logging library** with a build in way to log to **console**, **file** or any **custom** place as well as optional extensions to send a log file via mail or show it on the device.
 

@@ -1,11 +1,11 @@
 # Project information
-site_name: MKDocsExample
-site_url: https://mflisar.github.io/MKDocsExample/
+site_name: Documentations
+site_url: https://mflisar.github.io/github-docs/
 
 copyright: Copyright &copy; 2023 Michael Flisar
 
-repo_url: https://github.com/mflisar/MKDocsExample
-repo_name: MKDocsExample
+#repo_url: https://github.com/mflisar/github-docs
+#repo_name: github-docs
 
 # Configuration
 theme:
@@ -102,7 +102,7 @@ extra:
 
 extra_css:
   - stylesheets/extra.css
-  
+
 # Page tree
 nav:
   - Home: index.md

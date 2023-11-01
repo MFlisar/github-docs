@@ -25,5 +25,6 @@ jobs:
             mkdocs-minify-plugin \
             "mkdocs-material[imaging]" \
             mkdocs-macros-plugin \
-            mkdocs-glightbox
+            mkdocs-glightbox \
+            mkdocs-badges
       - run: mkdocs gh-deploy --force
