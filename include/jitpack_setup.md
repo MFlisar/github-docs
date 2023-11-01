@@ -1,21 +1,28 @@
-Jitpack Setup:
-{{ page.title }}
-{{ page.meta.libray }}
+This library is distributed via [JitPack.io](https://jitpack.io/){target=_blank}.
 
-### TEST
-```kotlin
+??? code "1/2: Add jitpack to your project's `build.gradle`"
 
-// base path
-{{ page.meta.module_base_path }}
+    ```kotlin
+    repositories {
+        maven { url "https://jitpack.io" }
+    }
+    ```
 
-{% for key, value in page.meta.modules %}
-// Group1: {{ key }} - {{ value }}
-{% endfor %}
+???+ code "2/2: Add dependencies to your module's `build.gradle`"
 
-{% for group in page.meta %}
-// Group2: {{ group }}
-{% endfor %}
+    ```kotlin
 
-```
+    // use the latest version of the library
+    val {{ page.meta.module_version_key }} = "<LATEST-VERSION>" 
 
-### TEST ENDE
+    // include necessary modules
+    {% for module in page.meta.modules %}
+    // {{ module | first }} module{% if module|first|length > 1 %}s{%endif%}
+    {%- for sub  in module -%}
+    {%- for e in module[sub] %}
+    implementation("{{ page.meta.module_base_path }}:{{ e }}:${{ page.meta.module_version_key }}")
+    {%- endfor %}
+    {% endfor %}
+    {%- endfor %}
+
+    ```

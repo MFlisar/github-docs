@@ -75,8 +75,8 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - def_list
-  - pymdownx.tasklist:
-      custom_checkbox: true
+  #- pymdownx.tasklist:
+  #    custom_checkbox: true
       
 # Plugins
 plugins:
@@ -91,6 +91,7 @@ plugins:
   #- typeset
   - macros:
       include_dir: include
+  - glightbox
         
 # Additional configuration
 extra:
@@ -98,6 +99,9 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/mflisar
   #generator: false
+
+extra_css:
+  - stylesheets/extra.css
   
 # Page tree
 nav:

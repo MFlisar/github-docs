@@ -1,0 +1,1 @@
+A full [demo]({{ page.meta.demo_link }}){target=_blank} is included inside the *demo module*, it shows nearly every usage with working examples.
