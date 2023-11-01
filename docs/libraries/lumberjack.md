@@ -28,15 +28,26 @@ modules:
 
 This is a **full logging library** with a build in way to log to **console**, **file** or any **custom** place as well as optional extensions to send a log file via mail or show it on the device.
 
-!!! info
+!!! info-primary "Information"
 
     The complete library is **modularized** so that you can add just add those parts of it that you are interested in.
 
-??? info "Timber Support"
+??? info-primary "Timber Support"
 
     This library fully supports *Jack Whartons* [Timber](https://github.com/JakeWharton/timber){target=_blank} logging library (v4!). And was even based on it until *Lumberjack v6*. Beginning with *v6* I wrote new modules that work without timber which leads to a smaller and more versitile non timber version. I would advice you to use the non timber versions but if you want to you can simply use the timber modules I provide as well - whatever you prefer.
 
-    A short summary on why I went this way can be found [here](README-TIMBER.md)
+    ??? info-primary "Why did I do this?"
+
+        I decided to not use `Timber` myself anymore because of following reasons:
+
+        * `Timber` does explicitly rely on non lazy evaluating logging - it was a decision made by *Jack Wharton* and was the main reason to write `Lumberjack` at the beginning
+        * `Timber` is restrictive regarding class extensions - in v5 I would need access to a field to continue supporting timber in `Lumberjack`
+        * `Timber` is considered as working and feature requests and/or pull requests are not accepted if not really necessary - like e.g. my minimal one [here](https://github.com/JakeWharton/timber/issues/477).
+        * additionally I always needed to extend the `BaseTree` from `Timber` because of the limiting restrictions of the default `BaseTree` as well as it was to restrictive to make adjustment in it ( I always had a nearly 1:1 copy of it inside my library [here](https://github.com/MFlisar/Lumberjack/blob/595d4de0ae76338e66cf42f7324f51c945699fa8/library/implementations/timber/src/main/java/timber/log/BaseTree.kt#L9){target=_blank}). This was needed to allow to adjust the stack trace depth so that `Lumberjack` will log the correct calling place as a wrapper around `Timber`.
+
+        **This lead to my final decision**
+
+        `Lumberjack` does not need `Timber` and I provide a way to plug in `Timber` into `Lumberjack` now - this way using `Timber` and `Lumberjack` in combination is possible but not necessary anymore.
 	
 ## :camera: Example Outputs
 
@@ -57,8 +68,8 @@ This is a **full logging library** with a build in way to log to **console**, **
 * logs will be created with **class name**, **function name** abd **line number** of the calling place automatically
 * logs are evaluated lazily, this means, if the content of a log is not needed, it won't be evaluated
 * loggers can be *enabled*/*disabled*  and do support filtering logs
-* supports arbitrary loggers and provides data like **class name**, **function name**, **line number**
-* can be used with a very small custom logging implementation or timber, whatever you prefer
+* supports arbitrary loggers by implementing a single function based interface
+* can be used with a very small custom logging implementation or timber (whatever you prefer)
 * has extensions for
     * sending a log file via mail (no internet permissions - this is done by appending the log file to an `Intent` and let the user choose an email client)
     * a log file viewer (view or compose based)
@@ -144,9 +155,9 @@ Following dependency only applies to the **extension-composeviewer** module:
 ???+ code "Logging"
 
     ```kotlin
-    // whereever you want use one of L.* functions for logging
-    // all the functions are implemented as inline functions with lambdas, this means,
-    // everything inside the lambda is only executed if the log is really executed
+    // wherever you want use one of L.* functions for logging
+    // all the functions are implemented as inline functions with lambdas - this means,
+    // everything inside the lambda is only executed if the log is really ussed
 
     L.d { "a debug log" }
     L.e { "a error log" }
@@ -171,33 +182,39 @@ Following dependency only applies to the **extension-composeviewer** module:
 
 ???+ code "Filtering Logs"
 
-    ```kotlin
-    // for the lumberjack implementation you can provide a custom filter for each logging implementation
-    // => you get ALL data of the log to decide if you want to filter it out (classname, filename, line, log message, level, exception, ...)
-    // => simple provide a `LumberjackFilter` instance when instantiating the loggers
-    // definition of the interface looks like following:
-    // typealias LumberjackFilter = (level: Level, tag: String?, time: Long, fileName: String, className: String, methodName: String, line: Int, msg: String?, throwable: Throwable?) -> Boolean
-    val filter = object : LumberjackFilter {
-        override fun invoke( level: Level, tag: String?, time: Long,fileName: String,className: String,methodName: String,line: Int,msg: String?,throwable: Throwable?): Boolean {
-            // decide if you want to log this message...
-            return true
-        }
-    }
-    val consoleLogger = ConsoleLogger(filter = filter)
-    val fileLogger = FileLogger(filter = filter)
+    === "Lumberjack Version"
 
-    // for the timber implementation you can't filter such granualary, just by tag and package name
-    TimberLogger.filter = object: IFilter {
-        override fun isTagEnabled(baseTree: BaseTree, tag: String): Boolean {
-            // decide if you want to log this tag on this tree...
-            return true
+        ```kotlin
+        // typealias LumberjackFilter = (level: Level, tag: String?, time: Long, fileName: String, className: String, methodName: String, line: Int, msg: String?, throwable: Throwable?) -> Boolean
+        val filter = object : LumberjackFilter {
+            override fun invoke( level: Level, tag: String?, time: Long,fileName: String,className: String,methodName: String,line: Int,msg: String?,throwable: Throwable?): Boolean {
+                // decide if you want to log this message...
+                return true
+            }
         }
-        override fun isPackageNameEnabled(packageName: String): Boolean {
-          // decide if you want to log if the log comes from a class within the provided package name
-            return true
+        // the filter can then be attached to any logger implementation
+        val consoleLogger = ConsoleLogger(filter = filter)
+        val fileLogger = FileLogger(filter = filter)
+        ```
+
+    === "Timber Version"
+
+        !!! info-primary "Lumberjack Version"
+
+            The lumberjack implementation allows you more granular filter options as well as a custom filter for each logger implementation!
+
+        ```kotlin
+        TimberLogger.filter = object: IFilter {
+            override fun isTagEnabled(baseTree: BaseTree, tag: String): Boolean {
+                // decide if you want to log this tag on this tree...
+                return true
+            }
+            override fun isPackageNameEnabled(packageName: String): Boolean {
+                // decide if you want to log if the log comes from a class within the provided package name
+                return true
+            }
         }
-    }
-    ```
+        ```
 
 ???+ code "Other settings"
 
@@ -220,7 +237,7 @@ Following dependency only applies to the **extension-composeviewer** module:
 
 ## :material-view-module: Modules and Extensions
 
-Depending on your preferences you must decide yourself if you want to use the timber modules or the non timber modules. My suggestion is to prefer the non timber modules as those will save some space and will allow you to even log in a more flexible way. Despite that, all extensions work with any implementation (timer or non timber one)
+Depending on your preferences you must decide yourself if you want to use the timber modules or the non timber modules. My suggestion is to prefer the non timber modules as those will save some space and will allow you to even log in a more flexible way. Despite that, all extensions work with any implementation (timber or non timber one)
 
 ### 1) Extension Feedback
 
@@ -229,12 +246,16 @@ This small extension simply allows you to send a log file via mail (no internet 
 ???+ code "Send feedback"
 
     ```kotlin
-    L.sendFeedback(context, <file-logging-setup>.getLatestLogFiles(), receiverMailAddress)
+    L.sendFeedback(
+        context, 
+        <file-logging-setup>.getLatestLogFiles(), 
+        "some.mail@gmail.com"
+    )
     ```
 
 ### 2) Extension Notification
 
-This small extension provides you with with a few functions to create notifications (for app testers for example) that can be clicked and then will allow the user to send the log file to you via the `extension-feedback`.
+This small extension provides you with with a few functions to create notifications (for app testers or for the dev for example) that can be clicked and then will allow the user to send the log file to you via the `extension-feedback`. Or to open the log file by clicking the notification.
 
 ???+ code "Show notifications"
 
@@ -242,43 +263,30 @@ This small extension provides you with with a few functions to create notificati
     // show a crash notifcation - on notification click 
     // the user can send a feedback mail including the log file
     L.showCrashNotification(
-      context, 
-      logFile /* may be null */, 
-      "some.mail@gmail.com", 
-      R.mipmap.ic_launcher,
-      "NotificationChannelID", 
-      1234 /* notification id */
+        context: Context,
+        logFile: File?,
+        receiver: String,
+        appIcon: Int,
+        notificationChannelId: String,
+        notificationId: Int,
+        notificationTitle: String = "Rare exception found",
+        notificationText: String = "Please report this error by clicking this notification, thanks",
+        subject: String = "Exception found in ${context.packageName}",
+        titleForChooser: String = "Send report with",
+        filesToAppend: List<File> = emptyList()
     )
-
-    // show a notification to allow the user the report some interesting internal proplems
-    L.showCrashNotification(
-      context, 
-      fileLoggingSetup, 
-      "some.mail@gmail.com",
-      R.mipmap.ic_launcher, 
-      "NotificationChannelID", 
-      1234 /* notification id */
-    )
-
-    // show an information notification to the user (or for dev purposes)
-    L.showInfoNotification(
-      context, 
-      "NotificationChannelID", 
-      1234 /* notification id */, 
-      "Notification Title", 
-      "Notification Text", 
-      R.mipmap.ic_launcher
-    )
-
-    // as above, but on notification click it will open the log viewer showing the provided log file
-    L.showInfoNotification(
-      context, 
-      logFile, 
-      "NotificationChannelID", 
-      1234 /* notification id */, 
-      "Notification Title", 
-      "Notification Text", 
-      R.mipmap.ic_launcher
+    
+    // show an information notification to the user (for app tester or dev purposes)
+    // clicking it could send an email or open the log viewer or whatever...
+    fun L.showInfoNotification(
+        context: Context,
+        notificationChannelId: String,
+        notificationId: Int,
+        notificationTitle: String,
+        notificationText: String,
+        notificationIcon: Int,
+        clickIntent: Intent? = null,
+        apply: ((builder: NotificationCompat.Builder) -> Unit)? = null
     )
     ```
 
@@ -313,7 +321,11 @@ If you do not use compose, here's a view based alternative to show log files ins
     ```kotlin
     // show the log viewer activity (mail address is optional, 
     // if it's null, the send mail entry will be removed from the viewers menu)
-    L.showLog(context, fileLoggingSetup, "some.mail@gmail.com")
+    L.showLog(
+        context, 
+        fileLoggingSetup, 
+        "some.mail@gmail.com"
+    )
     ```
 
 | Viewer | |
@@ -322,9 +334,7 @@ If you do not use compose, here's a view based alternative to show log files ins
 
 ## :material-professional-hexagon: Advanced Usage
 
-Either use the timber version and plug in your custom loggers into timber (check out timber for that please) or simple plug in a custom logger into lumberjack directly if you do not use the timber solution like following.
-
-All you need to do is implementing a single function and then add your logger to `Lumberjack` (following example is the current `ConsoleLogger` implementation).
+Either use the timber version and plug in your custom loggers into timber (*check out timber for that please*) or simply plug in a custom logger into lumberjack directly if you do not use the timber solution like following - all you need to do is implementing a single function and then add your logger to `Lumberjack` (following example is the current `ConsoleLogger` implementation).
 
 ???+ code "Custom Logger Example"
 

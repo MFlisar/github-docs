@@ -1,0 +1,96 @@
+/*
+* CUSTOM COLORS
+*/
+
+/* Colors for LIGHT theme */
+:root {
+    --color-info-bg: #f00;
+    --color-info-bg-alpha: #3838381a;
+    --color-info-fg: #ffffff;
+}
+
+/* Colors for DARK theme */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-info-bg: #0f0;
+        --color-info-bg-alpha: #ffffff1a;
+        --color-info-fg: #000000;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --color-info-bg: #0ff;
+        --color-info-bg-alpha: #ffffff1a;
+        --color-info-fg: #000000;
+    }
+}
+
+[data-md-color-scheme="slate"] {
+    :root {
+        --color-info-bg: #00f;
+        --color-info-bg-alpha: #ffffff1a;
+        --color-info-fg: #000000;
+    }
+}
+
+/* ----------------------
+   Custom Code Admonition
+------------------------- */
+
+:root {
+    --md-admonition-icon--code: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4m-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4Z"/></svg>')
+}
+
+.md-typeset .admonition.code,
+.md-typeset details.code{
+    border-color: var(--color-info-bg)
+}.md-typeset .admonition.code:focus-within,
+.md-typeset details.code:focus-within{
+    box-shadow:0 0 0 .2rem var(--color-info-bg-alpha)
+}
+.md-typeset .code>.admonition-title,
+.md-typeset .code>summary{
+    background-color:var(--color-info-bg-alpha)
+}
+.md-typeset .code>.admonition-title:before,
+.md-typeset .code>summary:before{
+    background-color:var(--color-info-bg);
+    -webkit-mask-image:var(--md-admonition-icon--code);
+    mask-image:var(--md-admonition-icon--code)
+}
+.md-typeset .code>.admonition-title:after,
+.md-typeset .code>summary:after{
+    color:var(--color-info-bg)
+}
+
+/* ----------------------
+   Custom Info Admonition
+------------------------- */
+
+/*
+:root {
+    --md-admonition-icon--code: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4m-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4Z"/></svg>')
+}
+
+.md-typeset .admonition.code,
+.md-typeset details.code{
+    border-color:#383838
+}.md-typeset .admonition.code:focus-within,
+.md-typeset details.code:focus-within{
+    box-shadow:0 0 0 .2rem #3838381a
+}
+.md-typeset .code>.admonition-title,
+.md-typeset .code>summary{
+    background-color:#3838381a
+}
+.md-typeset .code>.admonition-title:before,
+.md-typeset .code>summary:before{
+    background-color:#383838;
+    -webkit-mask-image:var(--md-admonition-icon--code);
+    mask-image:var(--md-admonition-icon--code)
+}
+.md-typeset .code>.admonition-title:after,
+.md-typeset .code>summary:after{
+    color:#383838
+}*/
