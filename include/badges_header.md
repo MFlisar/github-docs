@@ -1,4 +1,7 @@
-# {{ page.title }} <a href="https://github.com/MFlisar/{{ page.meta.library }}" target="_blank"><img alt="Github" src="https://img.shields.io/badge/Github-444444?style=for-the-badge&amp;logo=github&amp;logoColor=white"></a> <a href="https://jitpack.io/#MFlisar/{{ page.meta.library }}" target="_blank"><img alt="Jitpack" src="https://img.shields.io/badge/Jitpack-888888?style=for-the-badge&amp;logo=github&amp;logoColor=white"></a> 
+# [{{ page.title }}](https://github.com/MFlisar/Lumberjack)
+<!--
+<a href="https://github.com/MFlisar/{{ page.meta.library }}" target="_blank"><img alt="Github" src="https://img.shields.io/badge/Github-444444?style=for-the-badge&amp;logo=github&amp;logoColor=white"></a> <a href="https://jitpack.io/#MFlisar/{{ page.meta.library }}" target="_blank"><img alt="Jitpack" src="https://img.shields.io/badge/Jitpack-888888?style=for-the-badge&amp;logo=github&amp;logoColor=white"></a> 
+-->
 
 <!--
 :material-star-outline: <span id="stars"></span> :material-source-fork: <span id="forks"></span>
