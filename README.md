@@ -1,4 +1,4 @@
-# MKDocsExample
+# Github Docs
 
 * [Customisation](https://squidfunk.github.io/mkdocs-material/setup/)
 * [Icons](https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/?h=icons)
