@@ -1,5 +1,5 @@
 ---
-icon: material/github
+icon: simple/jetpackcompose
 library: ComposeDebugDrawer
 module_base_path: com.github.MFlisar.ComposeDebugDrawer
 module_version_key: composedebugdrawer

@@ -1,5 +1,5 @@
 ---
-icon: material/github
+icon: simple/jetpackcompose
 library: ComposeChangelog
 module_base_path: com.github.MFlisar.ComposeChangelog
 module_version_key: composechangelog

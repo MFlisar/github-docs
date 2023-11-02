@@ -1,5 +1,5 @@
 ---
-icon: material/github
+icon: simple/jetpackcompose
 library: ComposePreferences
 module_base_path: com.github.MFlisar.ComposePreferences
 module_version_key: composepreferences
