@@ -49,7 +49,7 @@ modules:
 
 | Console | |
 |-|-|
-| ![Viewer](../images/lumberjack/log1.png) | ![Viewer](../images/lumberjack/log2.png) |
+| ![Log](../images/lumberjack/log1.png) | ![Log](../images/lumberjack/log2.png) |
 
 | File |
 |-|

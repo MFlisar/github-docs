@@ -9,4 +9,6 @@ modules:
 
 {% include 'badges_header.md' %}
 
-TODO
+**TODO**
+
+Currently the readme is still hosted inside the [github repository](https://github.com/MFlisar/ComposeDialogs){target=_blank}.
