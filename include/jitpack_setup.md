@@ -13,14 +13,14 @@ This library is distributed via [JitPack.io](https://jitpack.io/){target=_blank}
     ```kotlin
 
     // use the latest version of the library
-    val {{ page.meta.module_version_key }} = "<LATEST-VERSION>" 
+    val {{ page.meta.library | lower }} = "<LATEST-VERSION>" 
 
     // include necessary modules
     {% for module in page.meta.modules %}
     // {{ module | first }} module{% if module|first|length > 1 %}s{%endif%}
     {%- for sub  in module -%}
     {%- for e in module[sub] %}
-    implementation("{{ page.meta.module_base_path }}:{{ e }}:${{ page.meta.module_version_key }}")
+    implementation("com.github.MFlisar.{{ page.meta.library }}:{{ e }}:${{ page.meta.library | lower }}")
     {%- endfor %}
     {% endfor %}
     {%- endfor %}

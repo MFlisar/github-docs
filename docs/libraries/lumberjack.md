@@ -1,8 +1,6 @@
 ---
 icon: material/github
 library: Lumberjack
-module_base_path: com.github.MFlisar.Lumberjack
-module_version_key: lumberjack
 demo_link: https://github.com/MFlisar/Lumberjack/blob/master/demo/src/main/java/com/michaelflisar/lumberjack/demo
 modules:
   - core: 
@@ -24,7 +22,7 @@ modules:
 
 {% include 'badges_header.md' %}
 
-This is a **full logging library** with a build in way to log to **console**, **file** or any **custom** place as well as optional extensions to send a log file via mail or show it on the device.
+<i>This is a **full logging library** with a build in way to log to **console**, **file** or any **custom** place as well as optional extensions to send a log file via mail or show it on the device.</i>
 
 !!! info-primary "Information"
 
@@ -94,8 +92,8 @@ This is a **full logging library** with a build in way to log to **console**, **
 | `extension-feedback` | [FeedbackManager](https://github.com/MFlisar/FeedbackManager){target=_blank} | `2.0.3` |
 | `extension-notification` | [FeedbackManager](https://github.com/MFlisar/FeedbackManager){target=_blank} | `2.0.3` |
 | `extension-viewer` | [FastScroller](https://github.com/quiph/RecyclerView-FastScroller){target=_blank} | `1.0.0` |
-| `extension-viewer` | - | `2.0.3` |
-| `extension-composeviewer` | - | `2.0.3` |
+| | [FeedbackManager](https://github.com/MFlisar/FeedbackManager){target=_blank} | `2.0.3` |
+| `extension-composeviewer` | [FeedbackManager](https://github.com/MFlisar/FeedbackManager){target=_blank} | `2.0.3` |
 
 Following dependency only applies to the **extension-composeviewer** module:
 
@@ -185,7 +183,17 @@ Following dependency only applies to the **extension-composeviewer** module:
         ```kotlin
         // typealias LumberjackFilter = (level: Level, tag: String?, time: Long, fileName: String, className: String, methodName: String, line: Int, msg: String?, throwable: Throwable?) -> Boolean
         val filter = object : LumberjackFilter {
-            override fun invoke( level: Level, tag: String?, time: Long,fileName: String,className: String,methodName: String,line: Int,msg: String?,throwable: Throwable?): Boolean {
+            override fun invoke(
+                level: Level,
+                tag: String?,
+                time: Long,
+                fileName: String,
+                className: String,
+                methodName: String,
+                line: Int,
+                msg: String?,
+                throwable: Throwable?
+            ): Boolean {
                 // decide if you want to log this message...
                 return true
             }

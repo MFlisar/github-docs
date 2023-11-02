@@ -91,7 +91,9 @@ plugins:
   #- typeset
   - macros:
       include_dir: include
-  - glightbox
+  - glightbox:
+      skip_classes:
+         - exclude-glightbox
         
 # Additional configuration
 extra:
@@ -114,4 +116,3 @@ nav:
       - ComposePreferences: libraries/composepreferences.md
       - ComposeChangelog: libraries/composechangelog.md
       - ComposeDebugDrawer: libraries/composedebugdrawer.md
-  - About: about.md
