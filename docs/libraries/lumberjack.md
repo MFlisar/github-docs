@@ -250,9 +250,9 @@ This small extension simply allows you to send a log file via mail (no internet 
 
     ```kotlin
     L.sendFeedback(
-        context, 
-        <file-logging-setup>.getLatestLogFiles(), 
-        "some.mail@gmail.com"
+        context = context, 
+        receiver = "some.mail@gmail.com",
+		attachments = listOfNotNull(<file-logging-setup>.getLatestLogFiles())  
     )
     ```
 
@@ -263,34 +263,39 @@ This small extension provides you with with a few functions to create notificati
 ???+ code "Show notifications"
 
     ```kotlin
-    // show a crash notifcation - on notification click 
-    // the user can send a feedback mail including the log file
-    L.showCrashNotification(
-        context: Context,
-        logFile: File?,
-        receiver: String,
-        appIcon: Int,
-        notificationChannelId: String,
-        notificationId: Int,
-        notificationTitle: String = "Rare exception found",
-        notificationText: String = "Please report this error by clicking this notification, thanks",
-        subject: String = "Exception found in ${context.packageName}",
-        titleForChooser: String = "Send report with",
-        filesToAppend: List<File> = emptyList()
-    )
-    
-    // show an information notification to the user (for app tester or dev purposes)
-    // clicking it could send an email or open the log viewer or whatever...
-    fun L.showInfoNotification(
-        context: Context,
-        notificationChannelId: String,
-        notificationId: Int,
-        notificationTitle: String,
-        notificationText: String,
-        notificationIcon: Int,
-        clickIntent: Intent? = null,
-        apply: ((builder: NotificationCompat.Builder) -> Unit)? = null
-    )
+    // shows a notifcation - on notification click the suer can do following:
+	// * nothing
+	// * send a mail with optional attachments like e.g. log files, database, whatever
+	// * execute a custom action
+	fun L.showNotification(
+		context: Context,
+		notificationIcon: Int,
+		notificationChannelId: String,
+		notificationId: Int,
+		notificationTitle: String = "Rare exception found",
+		notificationText: String = "Please report this error by clicking this notification, thanks",
+		clickHandler: NotificationClickHandler
+	)
+	
+	// Click Handlers
+	// here's a short overview of the available click handles
+	sealed class NotificationClickHandler {
+
+		class SendFeedback(
+			context: Context,
+			val receiver: String,
+			val subject: String = "Exception found in ${context.packageName}",
+			val titleForChooser: String = "Send report with",
+			val attachments: List<File> = emptyList()
+		) : NotificationClickHandler()
+
+		class ClickIntent(
+			val intent: Intent,
+			val apply: ((builder: NotificationCompat.Builder) -> Unit)? = null
+		): NotificationClickHandler()
+
+		data object None: NotificationClickHandler()
+	}	
     ```
 
 ### 3) Extension ComposeViewer
