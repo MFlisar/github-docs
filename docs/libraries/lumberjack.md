@@ -278,7 +278,7 @@ This small extension provides you with with a few functions to create notificati
 	)
 	
 	// Click Handlers
-	// here's a short overview of the available click handles
+	// here's a short overview of the available click handlers
 	sealed class NotificationClickHandler {
 
 		class SendFeedback(
