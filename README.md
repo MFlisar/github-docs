@@ -28,4 +28,4 @@
 | ComposePreferences    | 0.3   |   |   |
 | ComposeChangelog      | 0.3   | ✓ | ✓ |
 | ComposeCustomTheme    | 0.1.1 | ✓ | ✓ |
-| ComposeDebugDrawer    | 0.5.1 |   |   |
+| ComposeDebugDrawer    | 0.5.1 | ✓ | ✓ |

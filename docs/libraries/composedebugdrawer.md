@@ -16,7 +16,7 @@ modules:
 
 {% include 'badges_header.md' %}
 
-<i>This library offers you a simple and easily expandable debug drawer.</i>
+<i>This library offers you a simple and easily readme debug drawer.</i>
 
 ## :camera: Screenshots
 
