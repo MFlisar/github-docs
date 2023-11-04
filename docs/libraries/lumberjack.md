@@ -243,67 +243,62 @@ Following dependency only applies to the **extension-composeviewer** module:
 
 Depending on your preferences you must decide yourself if you want to use the timber modules or the non timber modules. My suggestion is to prefer the non timber modules as those will save some space and will allow you to even log in a more flexible way. Despite that, all extensions work with any implementation (timber or non timber one)
 
-### 1) Extension Feedback
 
-This small extension simply allows you to send a log file via mail (no internet connection required). This will be done by sharing the file as email `Intent`.
+??? info-primary "Extension Feedback"
 
-???+ code "Send feedback"
+    This small extension simply allows you to send a log file via mail (no internet connection required). This will be done by sharing the file as email `Intent`.
 
     ```kotlin
     L.sendFeedback(
         context = context, 
         receiver = "some.mail@gmail.com",
-		attachments = listOfNotNull(<file-logging-setup>.getLatestLogFiles())  
+        attachments = listOfNotNull(<file-logging-setup>.getLatestLogFiles())  
     )
     ```
 
-### 2) Extension Notification
+??? info-primary "Extension Notification"
 
-This small extension provides you with with a few functions to create notifications (for app testers or for the dev for example) that can be clicked and then will allow the user to send the log file to you via the `extension-feedback`. Or to open the log file by clicking the notification.
-
-???+ code "Show notifications"
+    This small extension provides you with with a few functions to create notifications (for app testers or for the dev for example) that can be clicked and then will allow the user to send the log file to you via the `extension-feedback`. Or to open the log file by clicking the notification.
 
     ```kotlin
     // shows a notifcation - on notification click the suer can do following:
-	// * nothing
-	// * send a mail with optional attachments like e.g. log files, database, whatever
-	// * execute a custom action
-	fun L.showNotification(
-		context: Context,
-		notificationIcon: Int,
-		notificationChannelId: String,
-		notificationId: Int,
-		notificationTitle: String = "Rare exception found",
-		notificationText: String = "Please report this error by clicking this notification, thanks",
-		clickHandler: NotificationClickHandler
-	)
-	
-	// Click Handlers
-	// here's a short overview of the available click handlers
-	sealed class NotificationClickHandler {
+    // * nothing
+    // * send a mail with optional attachments like e.g. log files, database, whatever
+    // * execute a custom action
+    fun L.showNotification(
+        context: Context,
+        notificationIcon: Int,
+        notificationChannelId: String,
+        notificationId: Int,
+        notificationTitle: String = "Rare exception found",
+        notificationText: String = "Please report this error by clicking this notification, thanks",
+        clickHandler: NotificationClickHandler
+    )
+    
+    // Click Handlers
+    // here's a short overview of the available click handlers
+    sealed class NotificationClickHandler {
 
-		class SendFeedback(
-			context: Context,
-			val receiver: String,
-			val subject: String = "Exception found in ${context.packageName}",
-			val titleForChooser: String = "Send report with",
-			val attachments: List<File> = emptyList()
-		) : NotificationClickHandler()
+        class SendFeedback(
+            context: Context,
+            val receiver: String,
+            val subject: String = "Exception found in ${context.packageName}",
+            val titleForChooser: String = "Send report with",
+            val attachments: List<File> = emptyList()
+        ) : NotificationClickHandler()
 
-		class ClickIntent(
-			val intent: Intent,
-			val apply: ((builder: NotificationCompat.Builder) -> Unit)? = null
-		): NotificationClickHandler()
+        class ClickIntent(
+            val intent: Intent,
+            val apply: ((builder: NotificationCompat.Builder) -> Unit)? = null
+        ): NotificationClickHandler()
 
-		data object None: NotificationClickHandler()
-	}	
+        data object None: NotificationClickHandler()
+    }	
     ```
 
-### 3) Extension ComposeViewer
+??? info-primary "Extension ComposeViewer"
 
-If you use compose in your app you should use this viewer - it allows you to show log files directly inside your app.
-
-???+ code "Compose Dialog"
+    If you use compose in your app you should use this viewer - it allows you to show log files directly inside your app.
 
     ```kotlin
     val showLogViewer = rememberSaveable {
@@ -317,15 +312,11 @@ If you use compose in your app you should use this viewer - it allows you to sho
     )
     ```
 
-| Compose Viewer | |
-|-|-|
-| ![Viewer]({{ page.meta.screenshots }}/compose-viewer1.jpg) | ![Viewer]({{ page.meta.screenshots }}/compose-viewer2.jpg) |
+    | Compose Viewer | |
+    |-|-|
+    | ![Viewer]({{ page.meta.screenshots }}/compose-viewer1.jpg) | ![Viewer]({{ page.meta.screenshots }}/compose-viewer2.jpg) |
 
-### 4) Extension Viewer
-
-If you do not use compose, here's a view based alternative to show log files inside your app.
-
-???+ code "View Activity"
+??? info-primary "Extension Viewer"
 
     ```kotlin
     // show the log viewer activity (mail address is optional, 
@@ -337,9 +328,9 @@ If you do not use compose, here's a view based alternative to show log files ins
     )
     ```
 
-| Viewer | |
-|-|-|
-| ![Viewer]({{ page.meta.screenshots }}/viewer1.jpg) | ![Viewer]({{ page.meta.screenshots }}/viewer2.jpg) |
+    | Viewer | |
+    |-|-|
+    | ![Viewer]({{ page.meta.screenshots }}/viewer1.jpg) | ![Viewer]({{ page.meta.screenshots }}/viewer2.jpg) |
 
 ## :material-professional-hexagon: Advanced Usage
 
