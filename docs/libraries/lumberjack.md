@@ -49,7 +49,7 @@ modules:
 
 | Console | |
 |-|-|
-| ![Log](../images/lumberjack/log1.png) | ![Log](../images/lumberjack/log2.png) |
+| ![Log](https://github.com/MFlisar/Lumberjack/tree/master/screenshots/log1.png) | ![Log](https://github.com/MFlisar/Lumberjack/tree/master/screenshots/log2.png) |
 
 | File |
 |-|
@@ -57,7 +57,7 @@ modules:
 
 | Compose Viewer | | View Viewer | |
 |-|-|-|-|
-| ![Viewer](../images/lumberjack/compose-viewer1.jpg) | ![Viewer](../images/lumberjack/compose-viewer2.jpg) | ![Viewer](../images/lumberjack/viewer1.jpg) | ![Viewer](../images/lumberjack/viewer2.jpg) |
+| ![Viewer](https://github.com/MFlisar/Lumberjack/tree/master/screenshots/compose-viewer1.jpg) | ![Viewer](https://github.com/MFlisar/Lumberjack/tree/master/screenshots/compose-viewer2.jpg) | ![Viewer](https://github.com/MFlisar/Lumberjack/tree/master/screenshots/viewer1.jpg) | ![Viewer](https://github.com/MFlisar/Lumberjack/tree/master/screenshots/viewer2.jpg) |
 
 ## :material-check-all: Features
 
@@ -318,7 +318,7 @@ If you use compose in your app you should use this viewer - it allows you to sho
 
 | Compose Viewer | |
 |-|-|
-| ![Viewer](../images/lumberjack/compose-viewer1.jpg) | ![Viewer](../images/lumberjack/compose-viewer2.jpg) |
+| ![Viewer](https://github.com/MFlisar/Lumberjack/tree/master/screenshots/compose-viewer1.jpg) | ![Viewer](https://github.com/MFlisar/Lumberjack/tree/master/screenshots/compose-viewer2.jpg) |
 
 ### 4) Extension Viewer
 
@@ -338,7 +338,7 @@ If you do not use compose, here's a view based alternative to show log files ins
 
 | Viewer | |
 |-|-|
-| ![Viewer](../images/lumberjack/viewer1.jpg) | ![Viewer](../images/lumberjack/viewer2.jpg) |
+| ![Viewer](https://github.com/MFlisar/Lumberjack/tree/master/screenshots/viewer1.jpg) | ![Viewer](https://github.com/MFlisar/Lumberjack/tree/master/screenshots/viewer2.jpg) |
 
 ## :material-professional-hexagon: Advanced Usage
 
