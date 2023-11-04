@@ -17,7 +17,7 @@
 ### Status
 
 |Library|Version|Readme|Documentation|
-|-|-|-|-|
+|:-|:-:|:-:|:-:|
 | Lumberjack      | 6.0.1 | ✓ | ✓ |
 | KotPreferences  | 0.3   | ✓ | ✓ |
 | KotBilling      | 0.6   | ✓ | ✓ |
