@@ -154,7 +154,7 @@ With this library you can declare preferences via kotlin `delegates` and observe
 
     This module is placed inside the `encrpytion-aes` artifact and can simply be used like following:
 
-    #### Step 1/2: define the encryption
+    **Step 1/2: define the encryption**
 
     ```kotlin
     private const val ALGORITHM = StorageEncryptionAES.DEFAULT_ALGORITHM
@@ -168,7 +168,7 @@ With this library you can declare preferences via kotlin `delegates` and observe
     val ENCRYPTION = StorageEncryptionAES(ALGORITHM, KEY, IV)
     ```
 
-    #### Step 2/2: attach the encryption to your storage instance
+    **Step 2/2: attach the encryption to your storage instance**
 
     ```kotlin
     object MyEncryptedSettingsModel : SettingsModel(

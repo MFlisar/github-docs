@@ -80,11 +80,11 @@ ComposeTheme(state = state) {
 
 There only exists on very small extension for this library.
 
-### Extension DefaultThemes
+??? info-primary "Extension DefaultThemes"
 
-This extension adds a collection of default themes that you can use if needed.
+    This extension adds a collection of default themes that you can use if needed.
 
-```kotlin
-// returns a list of all existing default themes
-val themes = ComposeThemeDefaults.getDefaultThemes()
-```
+    ```kotlin
+    // returns a list of all existing default themes
+    val themes = ComposeThemeDefaults.getDefaultThemes()
+    ```

@@ -28,4 +28,4 @@ Check out the [library](libraries/lumberjack.md) section to see all the librarie
 
 ## :material-code-tags: Source Code
 
-[https://github.com/MFlisar/github-docs](https://github.com/MFlisar/github-docs)
+[https://github.com/MFlisar/github-docs](https://github.com/MFlisar/github-docs){target=_blank}
