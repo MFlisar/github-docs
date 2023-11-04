@@ -15,10 +15,7 @@ modules:
 
 {% include 'badges_header.md' %}
 
-## :camera: Screenshots
-
-| ![Demo]({{ page.meta.screenshots }}/demo.png "Demo") |
-| :-: |
+<i>With this library you can declare preferences via **kotlin delegates** and observe and update them via kotlin Flows. This works with any storage implementation, an implementation for JetPack DataStore is provided already.</i>
 
 ## :material-check-all: Features
 
