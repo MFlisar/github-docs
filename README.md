@@ -19,19 +19,19 @@
 [x] Lumberjack 6.0.1
   [x] Readme
   [x] Documentation
-[ ] ComposeDialogs
+[ ] ComposeDialogs 1.0.4
   [ ] Readme
   [ ] Documentation
-[ ] ComposePreferences
+[ ] ComposePreferences 0.3
   [ ] Readme
   [ ] Documentation
-[ ] ComposeChangelog
+[ ] ComposeChangelog 0.3
   [ ] Readme
   [ ] Documentation
 [x] ComposeCustomTheme 0.1
   [x] Readme
   [x] Documentation
-[ ] ComposeDebugDrawer
+[ ] ComposeDebugDrawer 0.5.1
   [ ] Readme
   [ ] Documentation
   
