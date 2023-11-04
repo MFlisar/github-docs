@@ -111,6 +111,8 @@ nav:
   - Libraries:
     - Common:
       - Lumberjack: libraries/lumberjack.md
+      - KotPreferences: libraries/kotpreferences.md
+      - KotBilling: libraries/kotbilling.md
     - Compose:
       - ComposeDialogs: libraries/composedialogs.md
       - ComposePreferences: libraries/composepreferences.md

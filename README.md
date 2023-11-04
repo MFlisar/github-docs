@@ -19,6 +19,13 @@
 [x] Lumberjack 6.0.1
   [x] Readme
   [x] Documentation
+[x] KotPreferences 0.3
+  [ ] Readme
+  [ ] Documentation
+[x] KotBilling 0.6
+  [ ] Readme
+  [ ] Documentation
+
 [ ] ComposeDialogs 1.0.4
   [ ] Readme
   [ ] Documentation
