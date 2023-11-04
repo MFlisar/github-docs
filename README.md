@@ -20,7 +20,7 @@
 |-|-|-|-|
 | Lumberjack      | 6.0.1 | ✓ | ✓ |
 | KotPreferences  | 0.3   | ✓ | ✓ |
-| KotBilling      | 0.6   |   |   |
+| KotBilling      | 0.6   | ✓ | ✓ |
 ||||
 | **Compose** |||
 ||||
