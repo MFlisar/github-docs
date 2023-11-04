@@ -2,6 +2,7 @@
 icon: material/github
 library: Lumberjack
 demo_link: https://github.com/MFlisar/Lumberjack/blob/master/demo/src/main/java/com/michaelflisar/lumberjack/demo
+screenshots: https://raw.githubusercontent.com/MFlisar/Lumberjack/master/screenshots
 modules:
   - core: 
     - core
@@ -49,7 +50,7 @@ modules:
 
 | Console | |
 |-|-|
-| ![Log](https://github.com/MFlisar/Lumberjack/tree/master/screenshots/log1.png) | ![Log](https://github.com/MFlisar/Lumberjack/tree/master/screenshots/log2.png) |
+| ![Log]({{ page.meta.screenshots }}/log1.png) | ![Log]({{ page.meta.screenshots }}/log2.png) |
 
 | File |
 |-|
@@ -57,7 +58,7 @@ modules:
 
 | Compose Viewer | | View Viewer | |
 |-|-|-|-|
-| ![Viewer](https://github.com/MFlisar/Lumberjack/tree/master/screenshots/compose-viewer1.jpg) | ![Viewer](https://github.com/MFlisar/Lumberjack/tree/master/screenshots/compose-viewer2.jpg) | ![Viewer](https://github.com/MFlisar/Lumberjack/tree/master/screenshots/viewer1.jpg) | ![Viewer](https://github.com/MFlisar/Lumberjack/tree/master/screenshots/viewer2.jpg) |
+| ![Viewer]({{ page.meta.screenshots }}/compose-viewer1.jpg) | ![Viewer]({{ page.meta.screenshots }}/compose-viewer2.jpg) | ![Viewer]({{ page.meta.screenshots }}/viewer1.jpg) | ![Viewer]({{ page.meta.screenshots }}/viewer2.jpg) |
 
 ## :material-check-all: Features
 
@@ -318,7 +319,7 @@ If you use compose in your app you should use this viewer - it allows you to sho
 
 | Compose Viewer | |
 |-|-|
-| ![Viewer](https://github.com/MFlisar/Lumberjack/tree/master/screenshots/compose-viewer1.jpg) | ![Viewer](https://github.com/MFlisar/Lumberjack/tree/master/screenshots/compose-viewer2.jpg) |
+| ![Viewer]({{ page.meta.screenshots }}/compose-viewer1.jpg) | ![Viewer]({{ page.meta.screenshots }}/compose-viewer2.jpg) |
 
 ### 4) Extension Viewer
 
@@ -338,7 +339,7 @@ If you do not use compose, here's a view based alternative to show log files ins
 
 | Viewer | |
 |-|-|
-| ![Viewer](https://github.com/MFlisar/Lumberjack/tree/master/screenshots/viewer1.jpg) | ![Viewer](https://github.com/MFlisar/Lumberjack/tree/master/screenshots/viewer2.jpg) |
+| ![Viewer]({{ page.meta.screenshots }}/viewer1.jpg) | ![Viewer]({{ page.meta.screenshots }}/viewer2.jpg) |
 
 ## :material-professional-hexagon: Advanced Usage
 
