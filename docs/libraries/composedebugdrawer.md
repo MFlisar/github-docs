@@ -16,7 +16,7 @@ modules:
 
 {% include 'badges_header.md' %}
 
-<i>This library offers you a simple and easily readme debug drawer.</i>
+<i>This library offers you a **simple** and easily readme **debug drawer**.</i>
 
 ## :camera: Screenshots
 
@@ -30,15 +30,14 @@ modules:
 
 * easily extendible
 * one line integration
-* integrated modules
+* can be easily enabled/diabled in debug/release builds or based on a user setting
+* predefined optional modules
 
 **All features are splitted into separate modules, just include the modules you want to use!**
 
 ## :link: Dependencies
 
 **Compose**
-
-Following dependency only applies to the **extension-composeviewer** module.
 
 | Dependency | Version | Infos |
 |:-|-:|:-:|
@@ -50,8 +49,10 @@ Following dependency only applies to the **extension-composeviewer** module.
 | Module | Dependency | Version |
 |:-|:-|-:|
 | `core` | - |  |
+| **Info Modules** {: colspan=3 style="background-color:var(--md-primary-fg-color--light);"} | &#8288 {: style="padding:0"} | &#8288 {: style="padding:0"} |
 | `infos-build` | - |  |
 | `infos-device` | - |  |
+| **Plugins** {: colspan=3 style="background-color:var(--md-primary-fg-color--light);"} | &#8288 {: style="padding:0"} | &#8288 {: style="padding:0"} |
 | `plugin-lumberjack` | [Lumberjack](https://github.com/MFlisar/Lumberjack) | 6.0.1 |
 | `plugin-kotpreferences` | [KotPreferences](https://github.com/MFlisar/KotPreferences) | 0.3 |
 

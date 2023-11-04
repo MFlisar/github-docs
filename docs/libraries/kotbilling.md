@@ -20,7 +20,7 @@ module: core
 
 | Dependency | Version |
 |:-|-:|
-| com.android.billingclient:billing | `6.0.1` |
+| [com.android.billingclient:billing-ktx](https://mvnrepository.com/artifact/com.android.billingclient/billing-ktx?repo=google) | `6.0.1` |
 
 ## :simple-gradle: Setup Gradle
 

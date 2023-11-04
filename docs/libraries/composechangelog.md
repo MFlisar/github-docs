@@ -51,7 +51,7 @@ modules:
 |:-|:-|-:|
 | `core` | - |  |
 | **Extensions** {: colspan=3 style="background-color:var(--md-primary-fg-color--light);"} | &#8288 {: style="padding:0"} | &#8288 {: style="padding:0"} |
-| `statesaver-preferences` | no dependency |  |
+| `statesaver-preferences` | - |  |
 | `statesaver-kotpreferences` | [KotPreferences](https://github.com/MFlisar/KotPreferences) | 0.3 |
 
 ## :simple-gradle: Setup Gradle
