@@ -16,30 +16,30 @@
 
 ### Status
 
-[x] Lumberjack 6.0.1
-  [x] Readme
-  [x] Documentation
-[x] KotPreferences 0.3
-  [ ] Readme
-  [ ] Documentation
-[x] KotBilling 0.6
-  [ ] Readme
-  [ ] Documentation
+- [x] Lumberjack 6.0.1
+  - [- x] Readme
+  - [x] Documentation
+- [x] KotPreferences 0.3
+  - [ ] Readme
+  - [ ] Documentation
+- [x] KotBilling 0.6
+  - [ ] Readme
+  - [ ] Documentation
 
-[ ] ComposeDialogs 1.0.4
-  [ ] Readme
-  [ ] Documentation
-[ ] ComposePreferences 0.3
-  [ ] Readme
-  [ ] Documentation
-[ ] ComposeChangelog 0.3
-  [ ] Readme
-  [ ] Documentation
-[x] ComposeCustomTheme 0.1
-  [x] Readme
-  [x] Documentation
-[ ] ComposeDebugDrawer 0.5.1
-  [ ] Readme
-  [ ] Documentation
+- [ ] ComposeDialogs 1.0.4
+  - [ ] Readme
+  - [ ] Documentation
+- [ ] ComposePreferences 0.3
+  - [ ] Readme
+  - [ ] Documentation
+- [ ] ComposeChangelog 0.3
+  - [ ] Readme
+  - [ ] Documentation
+- [x] ComposeCustomTheme 0.1
+  - [x] Readme
+  - [x] Documentation
+- [ ] ComposeDebugDrawer 0.5.1
+  - [ ] Readme
+  - [ ] Documentation
   
-[ ] index page
+- [ ] index page

@@ -16,7 +16,7 @@ Check out the [library](libraries/lumberjack.md) section to see all the librarie
 |Image|Library|Description|
 |-|-|-|
 | **Libraries** {: colspan=3 style="background-color:var(--md-primary-fg-color--light);"} | &#8288 {: style="padding:0"} | &#8288 {: style="padding:0"} |
-| ![Log](https://github.com/MFlisar/Lumberjack/raw/main/screenshots/log1.png){: style="object-fit:cover;width:auto;height:200px;" } | [**Lumberjack**](libraries/lumberjack.md) | This is a **full logging library** with a build in way to log to **console**, **file** or any **custom** place as well as optional extensions to send a log file via mail or show it on the device. |
+| ![Log](https://github.com/MFlisar/Lumberjack/raw/master/screenshots/log1.png){: style="object-fit:cover;width:auto;height:200px;" } | [**Lumberjack**](libraries/lumberjack.md) | This is a **full logging library** with a build in way to log to **console**, **file** or any **custom** place as well as optional extensions to send a log file via mail or show it on the device. |
 | | [**KotPreferences**](libraries/kotpreferences.md) | With this library you can declare preferences via **kotlin delegates** and observe and update them via kotlin Flows. This works with any storage implementation, an implementation for JetPack DataStore is provided already. |
 | | [**KotBilling**](libraries/kotbilling.md) | A kotlin coroutine based solution for handling in app purchases for **billing library version 6**. |
 | **Compose Libraries** {: colspan=3 style="background-color:var(--md-primary-fg-color--light);"} | &#8288 {: style="padding:0"} | &#8288 {: style="padding:0"} |
