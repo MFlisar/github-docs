@@ -17,12 +17,12 @@
 ### Status
 
 - [x] Lumberjack 6.0.1
-  - [- x] Readme
+  - [x] Readme
   - [x] Documentation
-- [x] KotPreferences 0.3
+- [ ] KotPreferences 0.3
   - [ ] Readme
   - [ ] Documentation
-- [x] KotBilling 0.6
+- [ ] KotBilling 0.6
   - [ ] Readme
   - [ ] Documentation
 
