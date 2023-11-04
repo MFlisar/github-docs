@@ -89,7 +89,6 @@ There only exists on very small extension for this library.
     val themes = ComposeThemeDefaults.getDefaultThemes()
 
     // or get the default themes one by one
-    val theme = ComposeThemeDefaults.greenTheme()
     val theme = ComposeThemeDefaults.defaultTheme()
     val theme = ComposeThemeDefaults.amberTheme()
     val theme = ComposeThemeDefaults.brownTheme()
