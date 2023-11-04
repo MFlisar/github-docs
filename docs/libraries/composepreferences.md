@@ -1,13 +1,16 @@
 ---
 icon: simple/jetpackcompose
 library: ComposePreferences
-module_base_path: com.github.MFlisar.ComposePreferences
-module_version_key: composepreferences
 demo_link: https://github.com/MFlisar/ComposePreferences/blob/master/demo/src/main/java/com/michaelflisar/composepreferences/demo
+screenshots: https://raw.githubusercontent.com/MFlisar/ComposePreferences/master/screenshots
 modules:
+  - core: 
+    - core
 ---
 
 {% include 'badges_header.md' %}
+
+<i>This library offers you **preference screens** for compose including the ability of endless nesting subscreens as well as simple integration of custom preferences.</i>
 
 **TODO**
 
