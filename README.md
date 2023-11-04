@@ -13,3 +13,26 @@
 ## :book: Documentation
 
 [![Static Badge](https://img.shields.io/badge/Open%20Github%20Docs-lightgreen?style=for-the-badge&logo=github&logoColor=black)](https://mflisar.github.io/github-docs/)
+
+### Status
+
+[x] Lumberjack 6.0.1
+  [x] Readme
+  [x] Documentation
+[ ] ComposeDialogs
+  [ ] Readme
+  [ ] Documentation
+[ ] ComposePreferences
+  [ ] Readme
+  [ ] Documentation
+[ ] ComposeChangelog
+  [ ] Readme
+  [ ] Documentation
+[ ] ComposeCustomTheme 0.1
+  [ ] Readme
+  [ ] Documentation
+[ ] ComposeDebugDrawer
+  [ ] Readme
+  [ ] Documentation
+  
+[ ] index page

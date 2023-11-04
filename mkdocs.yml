@@ -115,4 +115,5 @@ nav:
       - ComposeDialogs: libraries/composedialogs.md
       - ComposePreferences: libraries/composepreferences.md
       - ComposeChangelog: libraries/composechangelog.md
+      - ComposeCustomTheme: libraries/composecustomtheme.md
       - ComposeDebugDrawer: libraries/composedebugdrawer.md
