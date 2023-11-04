@@ -82,9 +82,29 @@ There only exists on very small extension for this library.
 
 ??? info-primary "Extension DefaultThemes"
 
-    This extension adds a collection of default themes that you can use if needed.
+    This extension adds a collection of default themes that you can use if needed. For all colorful material 500 colors I created one theme.
 
     ```kotlin
     // returns a list of all existing default themes
     val themes = ComposeThemeDefaults.getDefaultThemes()
+
+    // or get the default themes one by one
+    ComposeThemeDefaults.greenTheme()
+    ComposeThemeDefaults.defaultTheme()
+    ComposeThemeDefaults.amberTheme()
+    ComposeThemeDefaults.brownTheme()
+    ComposeThemeDefaults.cyanTheme()
+    ComposeThemeDefaults.deepOrangeTheme()
+    ComposeThemeDefaults.deepPurpleTheme()
+    ComposeThemeDefaults.greenTheme()
+    ComposeThemeDefaults.indigoTheme()
+    ComposeThemeDefaults.lightBlueTheme()
+    ComposeThemeDefaults.lightGreenTheme()
+    ComposeThemeDefaults.limeTheme()
+    ComposeThemeDefaults.orangeTheme()
+    ComposeThemeDefaults.pinkTheme()
+    ComposeThemeDefaults.purpleTheme()
+    ComposeThemeDefaults.redTheme()
+    ComposeThemeDefaults.tealTheme()
+    ComposeThemeDefaults.yellowTheme()
     ```
