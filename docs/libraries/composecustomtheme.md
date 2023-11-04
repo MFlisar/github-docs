@@ -49,7 +49,11 @@ class App : Application() {
     override fun onCreate() {
 
         // register all available themes or register your custom themes
-        ComposeTheme.register(*ComposeThemeDefaults.getDefaultThemes().toTypedArray())
+        ComposeTheme.register(
+            *ComposeThemeDefaults
+                .getDefaultThemes()
+                .toTypedArray()
+        )
     }
 
 }
@@ -59,7 +63,7 @@ class App : Application() {
 
 ```kotlin
 // simply wrap your composable content inside ComposeTheme as if you would use MaterialTheme directly
- val baseTheme = remember { mutableStateOf(ComposeTheme.BaseTheme.System) }
+val baseTheme = remember { mutableStateOf(ComposeTheme.BaseTheme.System) }
 val dynamic = remember { mutableStateOf(false) }
 val theme = remember { mutableStateOf("green") } // the key of an registered theme
 val state = ComposeTheme.State(baseTheme, dynamic, theme)

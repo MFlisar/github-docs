@@ -28,9 +28,9 @@
 [ ] ComposeChangelog
   [ ] Readme
   [ ] Documentation
-[ ] ComposeCustomTheme 0.1
-  [ ] Readme
-  [ ] Documentation
+[x] ComposeCustomTheme 0.1
+  [x] Readme
+  [x] Documentation
 [ ] ComposeDebugDrawer
   [ ] Readme
   [ ] Documentation
