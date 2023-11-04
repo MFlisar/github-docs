@@ -17,7 +17,7 @@ modules:
 
 ## :camera: Screenshots
 
-| ![Demo](screenshots/demo.png "Demo") |
+| ![Demo]({{ page.meta.screenshots }}/demo.png "Demo") |
 | :-: |
 
 ## :material-check-all: Features

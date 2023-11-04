@@ -17,7 +17,7 @@ Check out the [library](libraries/lumberjack.md) section to see all the librarie
 |-|-|-|
 | **Libraries** {: colspan=3 style="background-color:var(--md-primary-fg-color--light);"} | &#8288 {: style="padding:0"} | &#8288 {: style="padding:0"} |
 | ![Log](https://github.com/MFlisar/Lumberjack/raw/master/screenshots/log1.png){: style="object-fit:cover;width:auto;height:200px;" } | [**Lumberjack**](libraries/lumberjack.md) | This is a **full logging library** with a build in way to log to **console**, **file** or any **custom** place as well as optional extensions to send a log file via mail or show it on the device. |
-| | [**KotPreferences**](libraries/kotpreferences.md) | With this library you can declare preferences via **kotlin delegates** and observe and update them via kotlin Flows. This works with any storage implementation, an implementation for JetPack DataStore is provided already. |
+| ![Log](https://github.com/MFlisar/KotPreferences/raw/master/screenshots/demo.png){: style="object-fit:cover;width:auto;height:200px;" } | [**KotPreferences**](libraries/kotpreferences.md) | With this library you can declare preferences via **kotlin delegates** and observe and update them via kotlin Flows. This works with any storage implementation, an implementation for JetPack DataStore is provided already. |
 | | [**KotBilling**](libraries/kotbilling.md) | A kotlin coroutine based solution for handling in app purchases for **billing library version 6**. |
 | **Compose Libraries** {: colspan=3 style="background-color:var(--md-primary-fg-color--light);"} | &#8288 {: style="padding:0"} | &#8288 {: style="padding:0"} |
 | ![Image](https://github.com/MFlisar/ComposeDialogs/raw/main/screenshots/overview.jpg){: style="object-fit:cover;width:auto;height:200px;" } | [**ComposeDialogs**](libraries/composedialogs.md) | This library offers you an easily extendible compose framework for modal dialogs and allows to show them as a **dialog** or a **bottom sheet**. |
@@ -28,4 +28,4 @@ Check out the [library](libraries/lumberjack.md) section to see all the librarie
 
 ## :material-code-tags: Source Code
 
-https://github.com/MFlisar/github-docs
+[https://github.com/MFlisar/github-docs](https://github.com/MFlisar/github-docs)
