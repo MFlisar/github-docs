@@ -6,10 +6,10 @@ screenshots: https://raw.githubusercontent.com/MFlisar/KotPreferences/master/scr
 modules:
   - core: 
     - core
-  - data store:
+  - storage:
     - datastore
     - encryption-aes
-  - extensions:
+  - extension:
     - compose
 ---
 

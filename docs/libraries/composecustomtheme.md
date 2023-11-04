@@ -6,7 +6,7 @@ screenshots: https://raw.githubusercontent.com/MFlisar/ComposeCustomTheme/master
 modules:
   - core: 
     - core
-  - modules:
+  - extension:
     - defaultthemes
 ---
 

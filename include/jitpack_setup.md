@@ -15,6 +15,10 @@ This library is distributed via [JitPack.io](https://jitpack.io/){target=_blank}
     // use the latest version of the library
     val {{ page.meta.library | lower }} = "<LATEST-VERSION>" 
 
+    {% if page.meta.modules == null -%}
+    // add library dependency
+    implementation("com.github.MFlisar.{{ page.meta.library }}:${{ page.meta.library | lower }}")
+    {% else -%}
     // include necessary modules
     {% for module in page.meta.modules %}
     // {{ module | first }} module{% if module|first|length > 1 %}s{%endif%}
@@ -24,5 +28,6 @@ This library is distributed via [JitPack.io](https://jitpack.io/){target=_blank}
     {%- endfor %}
     {% endfor %}
     {%- endfor %}
+    {%- endif %}
 
     ```

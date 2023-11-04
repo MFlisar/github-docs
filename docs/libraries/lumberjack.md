@@ -14,7 +14,7 @@ modules:
     - implementation-timber
     - logger-timber-console
     - logger-timber-file
-  - extensions:
+  - extension:
     - extension-feedback
     - extension-notification
     - extension-viewer
