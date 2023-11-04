@@ -16,15 +16,11 @@
 
 ### Status
 
-- [x] Lumberjack 6.0.1
-  - [x] Readme
-  - [x] Documentation
-- [ ] KotPreferences 0.3
-  - [ ] Readme
-  - [ ] Documentation
-- [ ] KotBilling 0.6
-  - [ ] Readme
-  - [ ] Documentation
+|Library|Version|Readme|Documentation|
+|-|-|-|-|
+| Lumberjack      | 6.0.1 | ✓ | ✓ |
+| KotPreferences  | 0.3   |   |   |
+| KotBilling      | 0.6   |   |   |
 
 - [ ] ComposeDialogs 1.0.4
   - [ ] Readme
