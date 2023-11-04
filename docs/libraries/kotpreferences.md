@@ -187,11 +187,10 @@ With this library you can declare preferences via kotlin `delegates` and observe
     ```kotlin
     object SettingsModel : SettingsModel(
         DataStoreStorage(
-            name = "demo_settings", // file name of preference file
-            cache = SettingSetup.ENABLE_CACHING // false by default, only relevant for blocking reads
+            name = "demo_settings" // file name of preference file
         )
     ) {
-    ...
+        // ...
     }
     ```
 
