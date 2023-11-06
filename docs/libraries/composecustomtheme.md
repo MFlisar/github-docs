@@ -115,3 +115,4 @@ There only exists on very small extension for this library.
 
 ## :material-handshake: Credits
 
+This library contains 54 predefined color schemes inside the `themes` module. Those are all directly copied from [FlexColorScheme](https://rydmike.com/flexcolorscheme/themesplayground-latest/) - a very useful homepage that allows you to **create your own themes** and also contains 54 predefined themes already. With the permission of [Rydmike](https://github.com/rydmike) I just copied every single predefined theme from his homepage and added it to this library.
