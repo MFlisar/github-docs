@@ -108,8 +108,11 @@ extra_css:
 # Page tree
 nav:
   - Home: index.md
-  - Libraries:
-    - Common:
+  - Open Source Projects:
+    - Utilities:
+      - CacheFileProvider: utilities/cachefileprovider.md
+      - FeedbackManager: utilities/feedbackmanager.md
+    - Libraries:
       - Lumberjack: libraries/lumberjack.md
       - KotPreferences: libraries/kotpreferences.md
       - KotBilling: libraries/kotbilling.md

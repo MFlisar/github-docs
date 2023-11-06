@@ -3,18 +3,21 @@ hide:
 - toc
 ---
 
-This homepages main purpuse is to document all my libraries in one place with the same styling.
+This homepages main purpuse is to document all my open source libraries in one place with the same styling.
 
 This way, people using one library will find additional useful libraries easier as well as many of my libraries do play together really nicely.
 
-## :material-library-outline: Libraries
+## :material-library-outline: Projects
 
-Check out the [library](libraries/lumberjack.md) section to see all the libraries that are available and documented here or get an overview below.
+Check out the [open source projects](utilities/cachefileprovider.md) section to see all the projects that are available and documented here or get an overview below.
 
 ## :material-table: Overview
 
 |Image|Library|Description|
 |-|-|-|
+| **Utilities** {: colspan=3 style="background-color:var(--md-primary-fg-color--light);"} | &#8288 {: style="padding:0"} | &#8288 {: style="padding:0"} |
+| | [**CacheFileProvider**](utilities/cachefileprovider.md) | This is a minimal library with a **few lines of code** and without dependencies that offers a simple file provider (simple read only access for sharing files with other apps). |
+| | [**FeedbackManager**](utilities/cachefileprovider.md) | This is a very small library that allows you to **send feedback** from an app **without internet permission** via email, either directly or via an unintrusive notification. |
 | **Libraries** {: colspan=3 style="background-color:var(--md-primary-fg-color--light);"} | &#8288 {: style="padding:0"} | &#8288 {: style="padding:0"} |
 | ![Log](https://github.com/MFlisar/Lumberjack/raw/master/screenshots/log1.png){: style="object-fit:cover;width:auto;height:200px;" } | [**Lumberjack**](libraries/lumberjack.md) | This is a **full logging library** with a build in way to log to **console**, **file** or any **custom** place as well as optional extensions to send a log file via mail or show it on the device. |
 | ![Log](https://github.com/MFlisar/KotPreferences/raw/main/screenshots/demo.png){: style="object-fit:cover;width:auto;height:200px;" } | [**KotPreferences**](libraries/kotpreferences.md) | With this library you can declare preferences via **kotlin delegates** and observe and update them via kotlin Flows. This works with any storage implementation, an implementation for JetPack DataStore is provided already. |

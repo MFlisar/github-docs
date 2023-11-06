@@ -7,7 +7,7 @@ modules:
   - core: 
     - core
   - extension:
-    - defaultthemes
+    - themes
 ---
 
 {% include 'badges_header.md' %}
@@ -26,7 +26,7 @@ modules:
 * ability to retrieve all registered themes
 * supports system ui theming (status bar + navigation bar)
 * build on top of `MaterialTheme`
-* comes with optional *build-in themes*
+* comes with optional *55 build-in themes*
 
 **All features are splitted into separate modules, just include the modules you want to use!**
 
@@ -50,7 +50,7 @@ class App : Application() {
 
         // register all available themes or register your custom themes
         ComposeTheme.register(
-            *ComposeThemeDefaults
+            *ComposeThemes
                 .getAllThemes()
                 .toTypedArray()
         )
@@ -80,31 +80,38 @@ ComposeTheme(state = state) {
 
 There only exists on very small extension for this library.
 
-??? info-primary "Extension DefaultThemes"
+??? info-primary "Extension Themes"
 
-    This extension adds a collection of default themes that you can use if needed. For all colorful material 500 colors I created one theme.
+    This extension adds a collection of default themes that you can use if needed.
 
     ```kotlin
     // returns a list of all existing default themes
-    val themes = ComposeThemeDefaults.getDefaultThemes()
+    val themes = ComposeThemes.list()
 
     // or get the default themes one by one
-    val theme = ComposeThemeDefaults.defaultTheme()
-    val theme = ComposeThemeDefaults.amberTheme()
-    val theme = ComposeThemeDefaults.blueTheme()
-    val theme = ComposeThemeDefaults.brownTheme()
-    val theme = ComposeThemeDefaults.cyanTheme()
-    val theme = ComposeThemeDefaults.deepOrangeTheme()
-    val theme = ComposeThemeDefaults.deepPurpleTheme()
-    val theme = ComposeThemeDefaults.greenTheme()
-    val theme = ComposeThemeDefaults.indigoTheme()
-    val theme = ComposeThemeDefaults.lightBlueTheme()
-    val theme = ComposeThemeDefaults.lightGreenTheme()
-    val theme = ComposeThemeDefaults.limeTheme()
-    val theme = ComposeThemeDefaults.orangeTheme()
-    val theme = ComposeThemeDefaults.pinkTheme()
-    val theme = ComposeThemeDefaults.purpleTheme()
-    val theme = ComposeThemeDefaults.redTheme()
-    val theme = ComposeThemeDefaults.tealTheme()
-    val theme = ComposeThemeDefaults.yellowTheme()
+    val theme = ThemeAmberBlue.get()
+    // ... there are 56 predefined themes availabe ...
     ```
+
+## :material-professional-hexagon: Advanced Usage
+
+??? info-primary "Custom Statusbar / Navigationbar Colors"
+
+    The default themes do use functions that allow you to define some custom statusbar / navigation settings if desired. Supported colors are `default`, `primary` and `surface` (those colors derive their color from the theme itself) or `custom` for fully user defined colors.
+
+    ```kotlin
+    // get all themes with custom statusbar / navigation bar
+    ComposeThemes.list(
+        statusBarColor = ComposeTheme.SystemUIColor.Surface,
+        navigationBarColor = ComposeTheme.SystemUIColor.Surface
+    )
+
+    // or get a single predefined theme with custom statusbar / navigation bar
+    val theme = ThemeAmberBlue.get(
+        statusBarColor = ComposeTheme.SystemUIColor.Surface,
+        navigationBarColor = ComposeTheme.SystemUIColor.Surface
+    )
+    ```
+
+## :material-handshake: Credits
+
