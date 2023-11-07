@@ -31,3 +31,21 @@ Check out the [open source projects](pages/index.md) section to see all the proj
 ## :material-code-tags: Source Code
 
 [https://github.com/MFlisar/github-docs](https://github.com/MFlisar/github-docs){target=_blank}
+
+## :material-information-box: Usages and State
+
+|Library|Version|Readme|Documentation|Used In|
+|:-|:-:|:-:|:-:|:-|
+| **Utilities** {: colspan=5 style="background-color:var(--md-primary-fg-color--light);"} | &#8288 {: style="padding:0"} | &#8288 {: style="padding:0"} |  &#8288 {: style="padding:0"} |  &#8288 {: style="padding:0"} |
+| CacheFileProvider     | 0.3.0 | ✓ | ✓ | • FeedbackManager |
+| FeedbackManager       | 2.0.4 | ✓ | ✓ | • Lumberjack |
+| **Libraries** {: colspan=5 style="background-color:var(--md-primary-fg-color--light);"} | &#8288 {: style="padding:0"} | &#8288 {: style="padding:0"} |  &#8288 {: style="padding:0"} |  &#8288 {: style="padding:0"} |
+| Lumberjack            | 6.0.2 | ✓ | ✓ | • ComposeDebugDrawer |
+| KotPreferences        | 0.3   | ✓ | ✓ | • ComposePreferences<br>• ComposeChangelog<br>• ComposeDebugDrawer |
+| KotBilling            | 0.6   | ✓ | ✓ | • ComposeDialogs |
+| **Compose** {: colspan=5 style="background-color:var(--md-primary-fg-color--light);"} | &#8288 {: style="padding:0"} | &#8288 {: style="padding:0"} |  &#8288 {: style="padding:0"} |  &#8288 {: style="padding:0"} |
+| ComposeDialogs        | 1.0.4 | ✓ | ✓ | • ComposePreferences |
+| ComposePreferences    | 0.3   |   |   | - |
+| ComposeChangelog      | 0.3.2 | ✓ | ✓ | - |
+| ComposeCustomTheme    | 0.1.2 | ✓ | ✓ | - |
+| ComposeDebugDrawer    | 0.5.1 | ✓ | ✓ | - |
