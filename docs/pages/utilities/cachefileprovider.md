@@ -6,7 +6,7 @@ module: core
 
 {% include 'badges_header.md' %}
 
-<i>This is a minimal library with a **few lines of code** and without dependencies that offers a simple file provider (simple read only access for sharing files with other apps).</i>
+<i>{{ projects[page.meta.library]['info'] }}</i>
 
 ## :material-check-all: Features
 

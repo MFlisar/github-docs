@@ -16,7 +16,7 @@ modules:
 
 {% include 'badges_header.md' %}
 
-<i>This library offers you a **simple** and easily readme **debug drawer**.</i>
+<i>{{ projects[page.meta.library]['info'] }}</i>
 
 ## :camera: Screenshots
 

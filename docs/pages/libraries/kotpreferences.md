@@ -15,7 +15,7 @@ modules:
 
 {% include 'badges_header.md' %}
 
-<i>With this library you can declare preferences via **kotlin delegates** and observe and update them via kotlin Flows. This works with any storage implementation, an implementation for JetPack DataStore is provided already.</i>
+<i>{{ projects[page.meta.library]['info'] }}</i>
 
 ## :material-check-all: Features
 

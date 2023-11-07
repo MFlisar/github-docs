@@ -13,7 +13,7 @@ modules:
 
 {% include 'badges_header.md' %}
 
-<i>This library offers you a a **changelog dialog** for compose including the ability to show new logs on app start only as well as filtering and customisation.</i>
+<i>{{ projects[page.meta.library]['info'] }}</i>
 
 ## :camera: Screenshots
 

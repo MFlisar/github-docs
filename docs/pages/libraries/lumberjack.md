@@ -23,7 +23,7 @@ modules:
 
 {% include 'badges_header.md' %}
 
-<i>This is a **full logging library** with a build in way to log to **console**, **file** or any **custom** place as well as optional extensions to send a log file via mail or show it on the device.</i>
+<i>{{ projects[page.meta.library]['info'] }}</i>
 
 !!! info-primary "Information"
 
@@ -54,7 +54,7 @@ modules:
 
 | File |
 |-|
-| [Example log file](../files/lumberjack/log.txt) |
+| [Example log file](../../files/lumberjack/log.txt) |
 
 | Compose Viewer | | View Viewer | |
 |-|-|-|-|

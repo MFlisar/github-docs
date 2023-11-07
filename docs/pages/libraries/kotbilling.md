@@ -8,7 +8,7 @@ module: core
 
 {% include 'badges_header.md' %}
 
-<i>A kotlin coroutine based solution for handling in app purchases for **billing library version 6**.</i>
+<i>{{ projects[page.meta.library]['info'] }}</i>
 
 ## :material-check-all: Features
 

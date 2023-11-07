@@ -21,8 +21,8 @@ This library is distributed via [JitPack.io](https://jitpack.io/){target=_blank}
     {% else -%}
     // include necessary modules
     {% for module in page.meta.modules %}
-    // {{ module | first }} module{% if module|first|length > 1 %}s{%endif%}
-    {%- for sub  in module -%}
+    {%- for sub in module %}
+    // {{ module | first }} module{% if module[sub] | length > 1 %}s{%endif%}
     {%- for e in module[sub] %}
     implementation("com.github.MFlisar.{{ page.meta.library }}:{{ e }}:${{ page.meta.library | lower }}")
     {%- endfor %}

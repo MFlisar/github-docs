@@ -10,7 +10,7 @@ modules:
 
 {% include 'badges_header.md' %}
 
-<i>This library offers you **preference screens** for compose including the ability of endless nesting subscreens as well as simple integration of custom preferences.</i>
+<i>{{ projects[page.meta.library]['info'] }}</i>
 
 **TODO**
 

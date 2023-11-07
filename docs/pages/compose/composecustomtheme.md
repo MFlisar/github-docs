@@ -12,7 +12,7 @@ modules:
 
 {% include 'badges_header.md' %}
 
-<i>This is a **full compose theme engine** that handles applying a theme as well as updating the system ui elements. Extendible and allows to simply apply user selected themes inside your app.</i>
+<i>{{ projects[page.meta.library]['info'] }}</i>
 
 ## :camera: Screenshots
 

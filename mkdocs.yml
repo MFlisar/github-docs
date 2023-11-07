@@ -68,7 +68,10 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - pymdownx.inlinehilite
-  - pymdownx.snippets
+  - pymdownx.snippets:
+      url_download: true
+      restrict_base_path: false
+      base_path: ["docs/"]
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
@@ -91,6 +94,8 @@ plugins:
   #- typeset
   - macros:
       include_dir: include
+      include_yaml:
+        - projects: _data/projects.yaml
   - glightbox:
       skip_classes:
          - exclude-glightbox
@@ -109,16 +114,20 @@ extra_css:
 nav:
   - Home: index.md
   - Open Source Projects:
+    - pages/index.md
     - Utilities:
-      - CacheFileProvider: utilities/cachefileprovider.md
-      - FeedbackManager: utilities/feedbackmanager.md
-    - Libraries:
-      - Lumberjack: libraries/lumberjack.md
-      - KotPreferences: libraries/kotpreferences.md
-      - KotBilling: libraries/kotbilling.md
+      - pages/utilities/index.md
+      - CacheFileProvider: pages/utilities/cachefileprovider.md
+      - FeedbackManager: pages/utilities/feedbackmanager.md
+    - Libraries:    
+      - pages/libraries/index.md
+      - Lumberjack: pages/libraries/lumberjack.md
+      - KotPreferences: pages/libraries/kotpreferences.md
+      - KotBilling: pages/libraries/kotbilling.md
     - Compose:
-      - ComposeDialogs: libraries/composedialogs.md
-      - ComposePreferences: libraries/composepreferences.md
-      - ComposeChangelog: libraries/composechangelog.md
-      - ComposeCustomTheme: libraries/composecustomtheme.md
-      - ComposeDebugDrawer: libraries/composedebugdrawer.md
+      - pages/compose/index.md
+      - ComposeDialogs: pages/compose/composedialogs.md
+      - ComposePreferences: pages/compose/composepreferences.md
+      - ComposeChangelog: pages/compose/composechangelog.md
+      - ComposeCustomTheme: pages/compose/composecustomtheme.md
+      - ComposeDebugDrawer: pages/compose/composedebugdrawer.md

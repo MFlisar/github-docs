@@ -6,7 +6,7 @@ module: core
 
 {% include 'badges_header.md' %}
 
-<i>This is a very small library that allows you to **send feedback** from an app **without internet permission** via email, either directly or via an unintrusive notification.</i>
+<i>{{ projects[page.meta.library]['info'] }}</i>
 
 ## :material-check-all: Features
 
