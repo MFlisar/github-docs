@@ -17,21 +17,21 @@
 ### Status
 
 |Library|Version|Readme|Documentation|Used In|
-|:-|:-:|:-:|:-:|
-||||
-| **Utilities** |||
-||||
+|:-|:-:|:-:|:-:|:-:|
+|||||
+| **Utilities** ||||
+|||||
 | CacheFileProvider     | 0.3.0 | ✓ | ✓ | [FeedbackManager] |
 | FeedbackManager       | 2.0.4 | ✓ | ✓ | [Lumberjack] |
-||||
-| **Libraries** |||
-||||
+|||||
+| **Libraries** ||||
+|||||
 | Lumberjack            | 6.0.2 | ✓ | ✓ | [ComposeDebugDrawer] |
 | KotPreferences        | 0.3   | ✓ | ✓ | [ComposePreferences, ComposeChangelog, ComposeDebugDrawer] |
 | KotBilling            | 0.6   | ✓ | ✓ | [ComposeDialogs] |
-||||
-| **Compose** |||
-||||
+|||||
+| **Compose** ||||
+|||||
 | ComposeDialogs        | 1.0.4 |   |   | [ComposePreferences] |
 | ComposePreferences    | 0.3   |   |   | - |
 | ComposeChangelog      | 0.3.1 | ✓ | ✓ | - |
