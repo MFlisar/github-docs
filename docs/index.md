@@ -45,7 +45,7 @@ Check out the [open source projects](pages/index.md) section to see all the proj
 | KotBilling            | 0.6   | ✓ | ✓ | • ComposeDialogs |
 | **Compose** {: colspan=5 style="background-color:var(--md-primary-fg-color--light);"} | &#8288 {: style="padding:0"} | &#8288 {: style="padding:0"} |  &#8288 {: style="padding:0"} |  &#8288 {: style="padding:0"} |
 | ComposeDialogs        | 1.0.4 | ✓ | ✓ | • ComposePreferences |
-| ComposePreferences    | 0.3   |   |   | - |
+| ComposePreferences    | 0.3   | ✓ | ✓ | - |
 | ComposeChangelog      | 0.3.2 | ✓ | ✓ | - |
 | ComposeCustomTheme    | 0.1.2 | ✓ | ✓ | - |
 | ComposeDebugDrawer    | 0.5.1 | ✓ | ✓ | - |
