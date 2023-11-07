@@ -26,7 +26,7 @@
 ||||
 | **Libraries** |||
 ||||
-| Lumberjack            | 6.0.1 | ✓ | ✓ |
+| Lumberjack            | 6.0.2 | ✓ | ✓ |
 | KotPreferences        | 0.3   | ✓ | ✓ |
 | KotBilling            | 0.6   | ✓ | ✓ |
 ||||
