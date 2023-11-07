@@ -50,6 +50,8 @@ modules:
 * supports showing dialogs as *dialogs*  or *bottom sheets*
 * easily extendible - creating a new dialog is just a few lines of code
 
+**All features are splitted into separate modules, just include the modules you want to use!**
+
 ## :link: Dependencies
 
 **Compose**
@@ -80,7 +82,7 @@ Following dependency only applies to the **extension-composeviewer** module.
 
 {% include 'jitpack_setup.md' %}
 
-## :material-code-tags: Setup Library
+## :keyboard: Usage
 
 ```kotlin
 
@@ -152,7 +154,7 @@ LazyColumn {
 
 ??? info-primary "Info Dialog"
 
-    ```kotlin title="Constructor in DialogInfo.kt"
+    ```kotlin title="DialogInfo.kt"
     --8<--
     https://raw.githubusercontent.com/MFlisar/ComposeDialogs/49002d560e59f7cf71167762533d71148e418bba/library/modules/info/src/main/java/com/michaelflisar/composedialogs/dialogs/info/DialogInfo.kt:19:32
     --8<--
@@ -160,7 +162,7 @@ LazyColumn {
 
 ??? info-primary "Input Dialog"
 
-    ```kotlin title="Constructor in DialogInput.kt"
+    ```kotlin title="DialogInput.kt"
     --8<--
     https://raw.githubusercontent.com/MFlisar/ComposeDialogs/49002d560e59f7cf71167762533d71148e418bba/library/modules/input/src/main/java/com/michaelflisar/composedialogs/dialogs/input/DialogInput.kt:65:93
     --8<--
@@ -168,7 +170,7 @@ LazyColumn {
 
 ??? info-primary "Number Dialog"
 
-    ```kotlin title="Constructor in DialogNumberPicker.kt"
+    ```kotlin title="DialogNumberPicker.kt"
     --8<--
     https://raw.githubusercontent.com/MFlisar/ComposeDialogs/49002d560e59f7cf71167762533d71148e418bba/library/modules/number/src/main/java/com/michaelflisar/composedialogs/dialogs/input/DialogNumberPicker.kt:47:76
     --8<--
@@ -183,7 +185,7 @@ LazyColumn {
 
 ??? info-primary "Time Dialog"
 
-    ```kotlin title="Constructor in DialogTime.kt"
+    ```kotlin title="DialogTime.kt"
     --8<--
     https://raw.githubusercontent.com/MFlisar/ComposeDialogs/49002d560e59f7cf71167762533d71148e418bba/library/modules/time/src/main/java/com/michaelflisar/composedialogs/dialogs/datetime/DialogTime.kt:33:46
     --8<--
@@ -201,7 +203,7 @@ LazyColumn {
 
     Here you can create a dialog based on static list data like following:
 
-    ```kotlin title="Constructor in DialogList.kt"
+    ```kotlin title="DialogList.kt"
     --8<--
     https://raw.githubusercontent.com/MFlisar/ComposeDialogs/49002d560e59f7cf71167762533d71148e418bba/library/modules/list/src/main/java/com/michaelflisar/composedialogs/dialogs/list/DialogList.kt:61:79
     --8<--
@@ -209,14 +211,14 @@ LazyColumn {
 
     But you can also create list with an asynchronous loader function like following:
 
-    ```kotlin title="Constructor in DialogList.kt"
+    ```kotlin title="DialogList.kt"
     --8<--
     https://raw.githubusercontent.com/MFlisar/ComposeDialogs/49002d560e59f7cf71167762533d71148e418bba/library/modules/list/src/main/java/com/michaelflisar/composedialogs/dialogs/list/DialogList.kt:118:142
     --8<--
     ```
 ??? info-primary "Progress Dialog"
 
-    ```kotlin title="Constructor in DialogProgress.kt"
+    ```kotlin title="DialogProgress.kt"
     --8<--
     https://raw.githubusercontent.com/MFlisar/ComposeDialogs/49002d560e59f7cf71167762533d71148e418bba/library/modules/progress/src/main/java/com/michaelflisar/composedialogs/dialogs/progress/DialogProgress.kt:29:43
     --8<--
@@ -224,7 +226,7 @@ LazyColumn {
 
 ??? info-primary "Billing Dialog"
 
-    ```kotlin title="Constructor in DialogBilling.kt"
+    ```kotlin title="DialogBilling.kt"
     --8<--
     https://raw.githubusercontent.com/MFlisar/ComposeDialogs/49002d560e59f7cf71167762533d71148e418bba/library/modules/billing/src/main/java/com/michaelflisar/composedialogs/dialogs/billing/DialogBilling.kt:61:73
     --8<--
@@ -232,7 +234,7 @@ LazyColumn {
 
 ??? info-primary "Custom Dialog"
 
-    ```kotlin title="Constructor in Dialog.kt"
+    ```kotlin title="Dialog.kt"
     --8<--
     https://raw.githubusercontent.com/MFlisar/ComposeDialogs/49002d560e59f7cf71167762533d71148e418bba/library/core/src/main/java/com/michaelflisar/composedialogs/core/Dialog.kt:43:53
     --8<--
