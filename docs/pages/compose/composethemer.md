@@ -1,8 +1,8 @@
 ---
 icon: simple/jetpackcompose
-library: ComposeCustomTheme
-demo_link: https://github.com/MFlisar/ComposeCustomTheme/blob/master/demo/src/main/java/com/michaelflisar/composecustomtheme/demo
-screenshots: https://raw.githubusercontent.com/MFlisar/ComposeCustomTheme/master/screenshots
+library: ComposeThemer
+demo_link: https://github.com/MFlisar/ComposeThemer/blob/master/demo/src/main/java/com/michaelflisar/Composethemer/demo
+screenshots: https://raw.githubusercontent.com/MFlisar/ComposeThemer/master/screenshots
 modules:
   - core: 
     - core
@@ -51,7 +51,7 @@ class App : Application() {
         // register all available themes or register your custom themes
         ComposeTheme.register(
             *ComposeThemes
-                .getAllThemes()
+                .getAll()
                 .toTypedArray()
         )
     }
@@ -86,7 +86,7 @@ There only exists on very small extension for this library.
 
     ```kotlin
     // returns a list of all existing default themes
-    val themes = ComposeThemes.list()
+    val themes = ComposeThemer.getRegisteredThemes()
 
     // or get the default themes one by one
     val theme = ThemeAmberBlue.get()
@@ -101,7 +101,7 @@ There only exists on very small extension for this library.
 
     ```kotlin
     // get all themes with custom statusbar / navigation bar
-    ComposeThemes.list(
+    ComposeThemer.getRegisteredThemes(
         statusBarColor = ComposeTheme.SystemUIColor.Surface,
         navigationBarColor = ComposeTheme.SystemUIColor.Surface
     )

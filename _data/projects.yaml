@@ -22,9 +22,9 @@ ComposePreferences:
 ComposeChangelog:
   info: "This library offers you a a **changelog dialog** for compose including the ability to show new logs on app start only as well as filtering and customisation."
   image: https://github.com/MFlisar/ComposeChangelog/raw/main/screenshots/overview.jpg
-ComposeCustomTheme:
+ComposeThemer:
   info: "This is a **full compose theme engine** that handles applying a theme as well as updating the system ui elements. Extendible and allows to simply apply user selected themes inside your app."
-  image: https://github.com/MFlisar/ComposeCustomTheme/raw/main/screenshots/demo.gif
+  image: https://github.com/MFlisar/ComposeThemer/raw/main/screenshots/demo.gif
 ComposeDebugDrawer:
   info: "This library offers you a **simple** and easily readme **debug drawer**."
   image: https://github.com/MFlisar/ComposeDebugDrawer/raw/main/screenshots/demo2.jpg

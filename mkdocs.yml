@@ -129,5 +129,5 @@ nav:
       - ComposeDialogs: pages/compose/composedialogs.md
       - ComposePreferences: pages/compose/composepreferences.md
       - ComposeChangelog: pages/compose/composechangelog.md
-      - ComposeCustomTheme: pages/compose/composecustomtheme.md
+      - ComposeThemer: pages/compose/composethemer.md
       - ComposeDebugDrawer: pages/compose/composedebugdrawer.md

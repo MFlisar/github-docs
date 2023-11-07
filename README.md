@@ -35,5 +35,5 @@
 | ComposeDialogs        | 1.0.4 |   |   | [ComposePreferences] |
 | ComposePreferences    | 0.3   |   |   | - |
 | ComposeChangelog      | 0.3.2 | ✓ | ✓ | - |
-| ComposeCustomTheme    | 0.1.2 | ✓ | ✓ | - |
+| ComposeThemer         | 0.1.2 | ✓ | ✓ | - |
 | ComposeDebugDrawer    | 0.5.1 | ✓ | ✓ | - |

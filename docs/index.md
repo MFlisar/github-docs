@@ -25,7 +25,7 @@ Check out the [open source projects](pages/index.md) section to see all the proj
 {% set lib = 'ComposeDialogs' %}{% set type = 'compose' %}{% include 'index_table_row.md' %}
 {% set lib = 'ComposePreferences' %}{% set type = 'compose' %}{% include 'index_table_row.md' %}
 {% set lib = 'ComposeChangelog' %}{% set type = 'compose' %}{% include 'index_table_row.md' %}
-{% set lib = 'ComposeCustomTheme' %}{% set type = 'compose' %}{% include 'index_table_row.md' %}
+{% set lib = 'ComposeThemer' %}{% set type = 'compose' %}{% include 'index_table_row.md' %}
 {% set lib = 'ComposeDebugDrawer' %}{% set type = 'compose' %}{% include 'index_table_row.md' %}
 
 ## :material-code-tags: Source Code
@@ -47,5 +47,5 @@ Check out the [open source projects](pages/index.md) section to see all the proj
 | ComposeDialogs        | {% set lib = 'ComposeDialogs' %}{% include 'github_release_info.md' %} | ✓ | ✓ | • ComposePreferences |
 | ComposePreferences    | {% set lib = 'ComposePreferences' %}{% include 'github_release_info.md' %}   | ✓ | ✓ | - |
 | ComposeChangelog      | {% set lib = 'ComposeChangelog' %}{% include 'github_release_info.md' %} | ✓ | ✓ | - |
-| ComposeCustomTheme    | {% set lib = 'ComposeCustomTheme' %}{% include 'github_release_info.md' %} | ✓ | ✓ | - |
+| ComposeThemer         | {% set lib = 'ComposeThemer' %}{% include 'github_release_info.md' %} | ✓ | ✓ | - |
 | ComposeDebugDrawer    | {% set lib = 'ComposeDebugDrawer' %}{% include 'github_release_info.md' %} | ✓ | ✓ | - |
