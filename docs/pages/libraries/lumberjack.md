@@ -27,7 +27,7 @@ modules:
 
 !!! info-primary "Information"
 
-    The complete library is **modularized** so that you can add just add those parts of it that you are interested in.
+    The complete library is **modularized** so that you can just add those parts of it that you are interested in.
 
 ??? info-primary "Timber Support"
 

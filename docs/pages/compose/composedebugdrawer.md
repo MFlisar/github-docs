@@ -53,7 +53,7 @@ modules:
 | `infos-build` | - |  |
 | `infos-device` | - |  |
 | **Plugins** {: colspan=3 style="background-color:var(--md-primary-fg-color--light);"} | &#8288 {: style="padding:0"} | &#8288 {: style="padding:0"} |
-| `plugin-lumberjack` | [Lumberjack](https://github.com/MFlisar/Lumberjack) | 6.0.1 |
+| `plugin-lumberjack` | [Lumberjack](https://github.com/MFlisar/Lumberjack) | 6.0.2 |
 | `plugin-kotpreferences` | [KotPreferences](https://github.com/MFlisar/KotPreferences) | 0.3 |
 
 ## :simple-gradle: Setup Gradle
@@ -170,7 +170,7 @@ It works as simple as following:
 
 ??? info-primary "Module Build Infos"
 
-    This simple module allows you to add a *build info* to the debug drawer.
+    This simple module allows you to add a *build info region* to the debug drawer.
 
     ```kotlin
     DebugDrawerBuildInfos(drawerState)
@@ -178,7 +178,7 @@ It works as simple as following:
 
 ??? info-primary "Module Device Infos"
 
-    This simple module allows you to add a *device info* to the debug drawer.
+    This simple module allows you to add a *device info region* to the debug drawer.
 
     ```kotlin
     DebugDrawerDeviceInfos(drawerState)
@@ -186,8 +186,32 @@ It works as simple as following:
 
 ??? info-primary "Extension Lumberjack"
 
-    This simple module allows you to add a region for my *lumberjack* logging library.
+    This simple module allows you to add a region for my *lumberjack* logging library. And will show buttons to show the log file, send it via mail or to clear it.
+
+    ```kotlin title="DebugDrawerLumberjack.kt"
+    --8<--
+    https://raw.githubusercontent.com/MFlisar/ComposeDebugDrawer/main/library/plugins/lumberjack/src/main/java/com/michaelflisar/composedebugdrawer/plugin/lumberjack/DebugDrawerLumberjack.kt:27:36
+    --8<--
+    ```
 
 ??? info-primary "Extension KotPreferences"
 
-    This simple module allows you to use my elegate based preference library *KotPreferences* inside the debug drawer.
+    This simple module allows you to use my delegate based preference library *KotPreferences* inside the debug drawer. With this extension labels are e.g. directly derived from the `KotPreference` property. It offers overloads for `Checkbox`, `Dropdown` and `SegmentedButton` debug drawer fields.
+
+    ```kotlin title="DebugDrawerKotPreferences.kt"
+    --8<--
+     https://raw.githubusercontent.com/MFlisar/ComposeDebugDrawer/main/library/plugins/kotpreferences/src/main/java/com/michaelflisar/composedebugdrawer/plugin/kotpreferences/DebugDrawerKotPreferences.kt:19:26
+    --8<--
+    ```
+
+    ```kotlin title="DebugDrawerKotPreferences.kt"
+    --8<--
+     https://raw.githubusercontent.com/MFlisar/ComposeDebugDrawer/main/library/plugins/kotpreferences/src/main/java/com/michaelflisar/composedebugdrawer/plugin/kotpreferences/DebugDrawerKotPreferences.kt:45:51
+    --8<--
+    ```
+
+    ```kotlin title="DebugDrawerKotPreferences.kt"
+    --8<--
+     https://raw.githubusercontent.com/MFlisar/ComposeDebugDrawer/main/library/plugins/kotpreferences/src/main/java/com/michaelflisar/composedebugdrawer/plugin/kotpreferences/DebugDrawerKotPreferences.kt:71:76
+    --8<--
+    ```

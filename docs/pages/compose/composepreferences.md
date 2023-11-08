@@ -44,6 +44,15 @@ modules:
 
 ## :link: Dependencies
 
+**Compose**
+
+| Dependency | Version | Infos |
+|:-|-:|:-:|
+| [Compose BOM](https://developer.android.com/jetpack/compose/bom/bom){target=_blank} | `2023.10.01` | [Mapping](https://developer.android.com/jetpack/compose/bom/bom-mapping){target=_blank} |
+| Material3 | `1.1.2` | |
+
+**Library**
+
 | Module | Dependency | Version |
 |:-|:-|-:|
 | `core` | - |  |
@@ -213,8 +222,8 @@ PreferenceScreen(
 
 ??? info-primary "Date Preference"
 
-    | Preview | | Module |
-    | :- | :- | :- |
+    | Preview | Module |
+    | :- | :- |
     | ![Preview]({{ page.meta.previews }}/date1.jpg "Preview") | `date` |
 
     ```kotlin title="PreferenceDate.kt"
@@ -249,6 +258,8 @@ PreferenceScreen(
     | ![Preview]({{ page.meta.previews }}/list1.jpg "Preview") | ![Preview]({{ page.meta.previews }}/list2.jpg "Preview") | `list` |
     | ![Preview]({{ page.meta.previews }}/list-multi1.jpg "Preview") | | `list` |
 
+    This preference does offer 2 different options, one that allows you to only select a single item and one that allows to select mutliple items.
+
     ```kotlin title="PreferenceList.kt"
     --8<--
     https://raw.githubusercontent.com/MFlisar/ComposePreferences/880e28fdb71bb0c56840758ca79802e96e2a7e5b/library/modules/screen/list/src/main/java/com/michaelflisar/composepreferences/screen/list/PreferenceList.kt:99:114
@@ -263,8 +274,8 @@ PreferenceScreen(
 
 ??? info-primary "Number Preference"
 
-    | Preview | | Module |
-    | :- | :- | :- |
+    | Preview | Module |
+    | :- | :- |
     | ![Preview]({{ page.meta.previews }}/number1.jpg "Preview") | `number` |
 
     ```kotlin title="PreferenceNumber.kt"
@@ -275,8 +286,8 @@ PreferenceScreen(
 
 ??? info-primary "Time Preference"
 
-    | Preview | | Module |
-    | :- | :- | :- |
+    | Preview | Module |
+    | :- | :- | 
     | ![Preview]({{ page.meta.previews }}/time1.jpg "Preview") | `time` |
 
     ```kotlin title="PreferenceTime.kt"
@@ -284,5 +295,3 @@ PreferenceScreen(
     https://raw.githubusercontent.com/MFlisar/ComposePreferences/880e28fdb71bb0c56840758ca79802e96e2a7e5b/library/modules/screen/time/src/main/java/com/michaelflisar/composepreferences/screen/time/PreferenceTime.kt:83:96
     --8<--
     ``` 
-
-## :material-professional-hexagon: Advanced Usage

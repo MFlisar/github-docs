@@ -56,8 +56,6 @@ modules:
 
 **Compose**
 
-Following dependency only applies to the **extension-composeviewer** module.
-
 | Dependency | Version | Infos |
 |:-|-:|:-:|
 | [Compose BOM](https://developer.android.com/jetpack/compose/bom/bom){target=_blank} | `2023.10.01` | [Mapping](https://developer.android.com/jetpack/compose/bom/bom-mapping){target=_blank} |
@@ -154,6 +152,12 @@ LazyColumn {
 
 ??? info-primary "Info Dialog"
 
+    | Preview | | Module |
+    | :- | :- | :- |
+    | ![Preview]({{ page.meta.screenshots }}/demo_info1.jpg "Preview") | ![Preview]({{ page.meta.screenshots }}/demo_info2.jpg "Preview") | `info` |
+
+    This shows a simple dialog with some informational text.
+
     ```kotlin title="DialogInfo.kt"
     --8<--
     https://raw.githubusercontent.com/MFlisar/ComposeDialogs/49002d560e59f7cf71167762533d71148e418bba/library/modules/info/src/main/java/com/michaelflisar/composedialogs/dialogs/info/DialogInfo.kt:19:32
@@ -161,6 +165,12 @@ LazyColumn {
     ```
 
 ??? info-primary "Input Dialog"
+
+    | Preview | | Module |
+    | :- | :- | :- |
+    | ![Preview]({{ page.meta.screenshots }}/demo_input1.jpg "Preview") | ![Preview]({{ page.meta.screenshots }}/demo_input2.jpg "Preview") | `input` |
+
+    This shows a dialog with a `InputField`. All its parameters are exposed via the compose function as you can see below, which allows you to simply adjust the `InputField`s behaviour. Additinally you can attach a validator which ensures, that the dialog will only return a valid input and can't be closed otherwise.
 
     ```kotlin title="DialogInput.kt"
     --8<--
@@ -170,12 +180,24 @@ LazyColumn {
 
 ??? info-primary "Number Dialog"
 
+    | Preview | | Module |
+    | :- | :- | :- |
+    | ![Preview]({{ page.meta.screenshots }}/demo_number1.jpg "Preview") | ![Preview]({{ page.meta.screenshots }}/demo_number3.jpg "Preview") | `number` |
+
+    This shows a number **picker** dialog. You can always use the *Input Dialog*  for numbers as well and change its options to accept numbers only and even attach an validator. But this one is meant for picking numbers with the help of one or two increase and decrease buttons.
+
     ```kotlin title="DialogNumberPicker.kt"
     --8<--
     https://raw.githubusercontent.com/MFlisar/ComposeDialogs/49002d560e59f7cf71167762533d71148e418bba/library/modules/number/src/main/java/com/michaelflisar/composedialogs/dialogs/input/DialogNumberPicker.kt:47:76
     --8<--
     ```
 ??? info-primary "Date Dialog"
+
+    | Preview | | Module |
+    | :- | :- | :- |
+    | ![Preview]({{ page.meta.screenshots }}/demo_calendar1.jpg "Preview") | ![Preview]({{ page.meta.screenshots }}/demo_calendar2.jpg "Preview") | `date` |
+
+    This shows a date selector dialog. First day of week, labels, and style can be adjusted to your needs.
 
     ```kotlin
     --8<--
@@ -185,6 +207,12 @@ LazyColumn {
 
 ??? info-primary "Time Dialog"
 
+    | Preview | Module |
+    | :- | :- |
+    | ![Preview]({{ page.meta.screenshots }}/demo_time1.jpg "Preview") | `time` |
+
+    This shows a time selector dialog. 24h mode is optional.
+
     ```kotlin title="DialogTime.kt"
     --8<--
     https://raw.githubusercontent.com/MFlisar/ComposeDialogs/49002d560e59f7cf71167762533d71148e418bba/library/modules/time/src/main/java/com/michaelflisar/composedialogs/dialogs/datetime/DialogTime.kt:33:46
@@ -193,6 +221,12 @@ LazyColumn {
 
 ??? info-primary "Color Dialog"
 
+    | Preview | | Module |
+    | :- | :- | :- |
+    | ![Preview]({{ page.meta.screenshots }}/demo_color1.jpg "Preview") | ![Preview]({{ page.meta.screenshots }}/demo_color2.jpg "Preview") | `color` |
+
+    This shows a color selector dialog. A table with predefined material colors as well as a customisation page will be shown. Alpha support can be enabled optionally.
+
     ```kotlin
     --8<--
     https://raw.githubusercontent.com/MFlisar/ComposeDialogs/49002d560e59f7cf71167762533d71148e418bba/library/modules/color/src/main/java/com/michaelflisar/composedialogs/dialogs/color/DialogColor.kt:57:75
@@ -200,6 +234,13 @@ LazyColumn {
     ```
 
 ??? info-primary "List Dialog"
+
+    | Preview | | Module |
+    | :- | :- | :- |
+    | ![Preview]({{ page.meta.screenshots }}/demo_list1.jpg "Preview") | ![Preview]({{ page.meta.screenshots }}/demo_list2.jpg "Preview") | `list` |
+    | ![Preview]({{ page.meta.screenshots }}/demo_list3.jpg "Preview") | ![Preview]({{ page.meta.screenshots }}/demo_list4.jpg "Preview") | `list` |
+
+    This shows a dialog with a list of items. Rendering, selection mode and more is adjustable.
 
     Here you can create a dialog based on static list data like following:
 
@@ -218,6 +259,12 @@ LazyColumn {
     ```
 ??? info-primary "Progress Dialog"
 
+    | Preview | | Module |
+    | :- | :- | :- |
+    | ![Preview]({{ page.meta.screenshots }}/demo_progress1.jpg "Preview") | ![Preview]({{ page.meta.screenshots }}/demo_progress2.jpg "Preview") | `progress` |
+
+    This shows a simple loading dialog with a progress indicator.
+
     ```kotlin title="DialogProgress.kt"
     --8<--
     https://raw.githubusercontent.com/MFlisar/ComposeDialogs/49002d560e59f7cf71167762533d71148e418bba/library/modules/progress/src/main/java/com/michaelflisar/composedialogs/dialogs/progress/DialogProgress.kt:29:43
@@ -226,9 +273,11 @@ LazyColumn {
 
 ??? info-primary "Billing Dialog"
 
+    This shows a dialog with the prices and names of your products. It also shows if a product is already owned and allows to buy unowned prodcuts by clicking them.
+
     ```kotlin title="DialogBilling.kt"
     --8<--
-    https://raw.githubusercontent.com/MFlisar/ComposeDialogs/49002d560e59f7cf71167762533d71148e418bba/library/modules/billing/src/main/java/com/michaelflisar/composedialogs/dialogs/billing/DialogBilling.kt:61:73
+    https://raw.githubusercontent.com/MFlisar/ComposeDialogs/main/library/modules/billing/src/main/java/com/michaelflisar/composedialogs/dialogs/billing/DialogBilling.kt:74:86
     --8<--
     ```
 

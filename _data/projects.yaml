@@ -11,7 +11,7 @@ KotBilling:
   info: "A kotlin coroutine based solution for handling in app purchases for **billing library version 6**."
   image: 
 KotPreferences:
-  info: "With this library you can declare preferences via **kotlin delegates** and observe and update them via kotlin Flows. This works with any storage implementation, an implementation for JetPack DataStore is provided already."
+  info: "With this library you can declare preferences via **kotlin delegates** and observe and update them via **kotlin Flows**. This works with any storage implementation, an implementation for JetPack DataStore is provided already."
   image: 
 ComposeDialogs:
   info: "This library offers you an easily extendible compose framework for modal dialogs and allows to show them as a **dialog** or a **bottom sheet**."
@@ -26,5 +26,5 @@ ComposeThemer:
   info: "This is a **full compose theme engine** that handles applying a theme as well as updating the system ui elements. Extendible and allows to simply apply user selected themes inside your app."
   image: https://github.com/MFlisar/ComposeThemer/raw/main/screenshots/demo.gif
 ComposeDebugDrawer:
-  info: "This library offers you a **simple** and easily readme **debug drawer**."
+  info: "This library offers you a **simple** and easily extendable **debug drawer**."
   image: https://github.com/MFlisar/ComposeDebugDrawer/raw/main/screenshots/demo2.jpg

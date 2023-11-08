@@ -86,9 +86,9 @@ There only exists on very small extension for this library.
 
     ```kotlin
     // returns a list of all existing default themes
-    val themes = ComposeThemer.getRegisteredThemes()
+    val themes = ComposeTheme.getRegisteredThemes()
 
-    // or get the default themes one by one
+    // or get the default themes one by one (all named like Theme*)
     val theme = ThemeAmberBlue.get()
     // ... there are 56 predefined themes availabe ...
     ```
@@ -101,7 +101,7 @@ There only exists on very small extension for this library.
 
     ```kotlin
     // get all themes with custom statusbar / navigation bar
-    ComposeThemer.getRegisteredThemes(
+    ComposeTheme.getRegisteredThemes(
         statusBarColor = ComposeTheme.SystemUIColor.Surface,
         navigationBarColor = ComposeTheme.SystemUIColor.Surface
     )
@@ -115,4 +115,4 @@ There only exists on very small extension for this library.
 
 ## :material-handshake: Credits
 
-This library contains 54 predefined color schemes inside the `themes` module. Those are all directly copied from [FlexColorScheme](https://rydmike.com/flexcolorscheme/themesplayground-latest/) - a very useful homepage that allows you to **create your own themes** and also contains 54 predefined themes already. With the permission of [Rydmike](https://github.com/rydmike) I just copied every single predefined theme from his homepage and added it to this library.
+This library contains 54 predefined color schemes inside the `themes` module. Those are all directly copied from [FlexColorScheme](https://rydmike.com/flexcolorscheme/themesplayground-latest/){target=_blank} - a very useful homepage that allows you to **create your own themes** and also contains 54 predefined themes already. With the permission of [Rydmike](https://github.com/rydmike){target=_blank} I just copied every single predefined theme from his homepage and added it to this library.
