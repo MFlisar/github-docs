@@ -35,3 +35,7 @@ val uri = CachedFileProvider.getCacheFileUri(context, cacheFile.name)
 // alternatively call the copy function with a File
 val cacheFile = CachedFileProvider.copyFileToCache(context, file)
 ```
+
+:bulb: Tipp
+
+If you want to share the cached file with an email app, then check out [FeedbackManager](feedbackmanager.md) - its an utility based on `CacheFileProvider` that does exactly that. It also takes care of the above mentioned `Intent.FLAG_GRANT_READ_URI_PERMISSION`.
