@@ -180,7 +180,7 @@ With this library you can declare preferences via kotlin `delegates` and observe
 
 ??? info-primary "Storage DataStore Module"
 
-    The `Storage` is an abstraction to support any storage implementation. The `datastore` module provides an implementation based on the [Android JetPack DataStore](https://developer.android.com/topic/libraries/architecture/datastore).
+    The `Storage` is an abstraction to support any storage implementation. The `datastore` module provides an implementation based on the [Android JetPack DataStore](https://developer.android.com/topic/libraries/architecture/datastore){target=_blank}.
 
     This module is placed inside the `datastore` artifact and can simple be used like following:
 
