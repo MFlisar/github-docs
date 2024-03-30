@@ -46,8 +46,10 @@ With this library you can declare preferences via kotlin `delegates` and observe
         val someEnum by enumPref(Enum.Value1)
         
         // custom
-        val someCustomClass by anyPref(TestClass.CONVERTER, TestClass())
-        
+        val someCustomClass by anyStringPref(TestClass.CONVERTER, TestClass()) // converts TestClass to a string and saves this string
+        val someCustomClass by anyIntPref(TestClass.CONVERTER, TestClass())    // converts TestClass to an int and saves this int
+        val someCustomClass by anyLongPref(TestClass.CONVERTER, TestClass())   // converts TestClass to a long and saves this long
+
         // sets
         val someStringSet by stringSetPref(setOf("a"))
         val someIntSet by intSetPref(setOf(1))
@@ -68,6 +70,10 @@ With this library you can declare preferences via kotlin `delegates` and observe
         val nullableLong by nullableLongPref()
         val nonNullableBool by boolPref()
         val nullableBool by nullableBoolPref()
+        // custom
+        val someCustomClass by nullableAnyStringPref(TestClass.CONVERTER, TestClass())
+        val someCustomClass by nullableAnyIntPref(TestClass.CONVERTER, TestClass())
+        val someCustomClass by nullableAnyLongPref(TestClass.CONVERTER, TestClass())
     }
     ```
 

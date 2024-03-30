@@ -20,6 +20,7 @@ Check out the [open source projects](pages/index.md) section to see all the proj
 {% set lib = 'FeedbackManager' %}{% set type = 'utilities' %}{% include 'index_table_row.md' %}
 | **Libraries** {: colspan=3 style="background-color:var(--md-primary-fg-color--light);"} | &#8288 {: style="padding:0"} | &#8288 {: style="padding:0"} |
 {% set lib = 'Lumberjack' %}{% set type = 'libraries' %}{% include 'index_table_row.md' %}
+{% set lib = 'KotPreferences' %}{% set type = 'libraries' %}{% include 'index_table_row.md' %}
 {% set lib = 'KotBilling' %}{% set type = 'libraries' %}{% include 'index_table_row.md' %}
 | **Compose Libraries** {: colspan=3 style="background-color:var(--md-primary-fg-color--light);"} | &#8288 {: style="padding:0"} | &#8288 {: style="padding:0"} |
 {% set lib = 'ComposeDialogs' %}{% set type = 'compose' %}{% include 'index_table_row.md' %}
