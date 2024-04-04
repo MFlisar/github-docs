@@ -15,6 +15,10 @@ With this library you can declare preferences via kotlin `delegates` and observe
 
 **All features are splitted into separate modules, just include the modules you want to use!**
 
+## :link: Dependencies
+
+This library does not have any dependencies!
+
 ## :simple-gradle: Setup Gradle
 
 {% include 'jitpack_setup.md' %}

@@ -29,8 +29,8 @@ screenshots: https://raw.githubusercontent.com/MFlisar/ComposeThemer/master/scre
 
 | Dependency | Version | Infos |
 |:-|-:|:-:|
-| [Compose BOM](https://developer.android.com/jetpack/compose/bom/bom){target=_blank} | `2024.02.01` | [Mapping](https://developer.android.com/jetpack/compose/bom/bom-mapping){target=_blank} |
-| Material3 | `1.2.0` | |
+| [Compose BOM](https://developer.android.com/jetpack/compose/bom/bom){target=_blank} | `{{ settings.bom }}` | [Mapping](https://developer.android.com/jetpack/compose/bom/bom-mapping){target=_blank} |
+| Material3 | `{{ settings.material3 }}` | |
 
 ## :simple-gradle: Setup Gradle
 

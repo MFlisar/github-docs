@@ -66,8 +66,8 @@ Following dependency only applies to the **extension-composeviewer** module.
 
 | Dependency | Version | Infos |
 |:-|-:|:-:|
-| [Compose BOM](https://developer.android.com/jetpack/compose/bom/bom){target=_blank} | `2023.10.01` | [Mapping](https://developer.android.com/jetpack/compose/bom/bom-mapping){target=_blank} |
-| Material3 | `1.1.2` | |
+| [Compose BOM](https://developer.android.com/jetpack/compose/bom/bom){target=_blank} | `{{ settings.bom }}` | [Mapping](https://developer.android.com/jetpack/compose/bom/bom-mapping){target=_blank} |
+| Material3 | `{{ settings.material3 }}` | |
 
 **Library**
 
@@ -83,10 +83,10 @@ Following dependency only applies to the **extension-composeviewer** module.
 | `logger-timber-console` | [Timber](https://github.com/JakeWharton/timber){target=_blank} | `4.7.1` |
 | `logger-timber-file` | [Timber](https://github.com/JakeWharton/timber){target=_blank}<br>[slf4j](https://www.slf4j.org/){target=_blank}<br>[logback-android](https://github.com/tony19/logback-android){target=_blank} | `4.7.1`<br>`2.0.7`<br>`3.0.0` |
 | **Common Extensions** {: colspan=3 style="background-color:var(--md-primary-fg-color--light);"} | &#8288 {: style="padding:0"} | &#8288 {: style="padding:0"} |
-| `extension-feedback` | [FeedbackManager](https://github.com/MFlisar/FeedbackManager){target=_blank} | `2.0.3` |
-| `extension-notification` | [FeedbackManager](https://github.com/MFlisar/FeedbackManager){target=_blank} | `2.0.3` |
-| `extension-viewer` | [FastScroller](https://github.com/quiph/RecyclerView-FastScroller){target=_blank}<br>[FeedbackManager](https://github.com/MFlisar/FeedbackManager){target=_blank} | `1.0.0`<br>`2.0.3` |
-| `extension-composeviewer` | [FeedbackManager](https://github.com/MFlisar/FeedbackManager){target=_blank} | `2.0.3` |
+| `extension-feedback` | [FeedbackManager](https://github.com/MFlisar/FeedbackManager){target=_blank} | `{{ settings.feedbackmanager }}` |
+| `extension-notification` | [FeedbackManager](https://github.com/MFlisar/FeedbackManager){target=_blank} | `{{ settings.feedbackmanager }}` |
+| `extension-viewer` | [FastScroller](https://github.com/quiph/RecyclerView-FastScroller){target=_blank}<br>[FeedbackManager](https://github.com/MFlisar/FeedbackManager){target=_blank} | `1.0.0`<br>`{{ settings.feedbackmanager }}` |
+| `extension-composeviewer` | [FeedbackManager](https://github.com/MFlisar/FeedbackManager){target=_blank} | `{{ settings.feedbackmanager }}` |
 
 ## :simple-gradle: Setup Gradle
 

@@ -36,8 +36,8 @@ screenshots: https://raw.githubusercontent.com/MFlisar/ComposeChangelog/master/s
 
 | Dependency | Version | Infos |
 |:-|-:|:-:|
-| [Compose BOM](https://developer.android.com/jetpack/compose/bom/bom){target=_blank} | `2024.02.01` | [Mapping](https://developer.android.com/jetpack/compose/bom/bom-mapping){target=_blank} |
-| Material3 | `1.2.0` | |
+| [Compose BOM](https://developer.android.com/jetpack/compose/bom/bom){target=_blank} | `{{ settings.bom }}` | [Mapping](https://developer.android.com/jetpack/compose/bom/bom-mapping){target=_blank} |
+| Material3 | `{{ settings.material3 }}` | |
 
 **Library**
 
@@ -46,7 +46,7 @@ screenshots: https://raw.githubusercontent.com/MFlisar/ComposeChangelog/master/s
 | `core` | - |  |
 | **Extensions** {: colspan=3 style="background-color:var(--md-primary-fg-color--light);"} | &#8288 {: style="padding:0"} | &#8288 {: style="padding:0"} |
 | `statesaver-preferences` | - |  |
-| `statesaver-kotpreferences` | [KotPreferences](https://github.com/MFlisar/KotPreferences) | 0.3 |
+| `statesaver-kotpreferences` | [KotPreferences](https://github.com/MFlisar/KotPreferences) | `{{ settings.kotpreferences }}` |
 
 ## :simple-gradle: Setup Gradle
 

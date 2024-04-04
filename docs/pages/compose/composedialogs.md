@@ -45,8 +45,8 @@ screenshots: https://raw.githubusercontent.com/MFlisar/ComposeDialogs/master/scr
 
 | Dependency | Version | Infos |
 |:-|-:|:-:|
-| [Compose BOM](https://developer.android.com/jetpack/compose/bom/bom){target=_blank} | `2024.02.01` | [Mapping](https://developer.android.com/jetpack/compose/bom/bom-mapping){target=_blank} |
-| Material3 | `1.2.0` | |
+| [Compose BOM](https://developer.android.com/jetpack/compose/bom/bom){target=_blank} | `{{ settings.bom }}` | [Mapping](https://developer.android.com/jetpack/compose/bom/bom-mapping){target=_blank} |
+| Material3 | `{{ settings.material3 }}` | |
 
 **Library**
 
@@ -61,7 +61,7 @@ screenshots: https://raw.githubusercontent.com/MFlisar/ComposeDialogs/master/scr
 | `dialog-time` | - |  |
 | `dialog-date` | - |  |
 | `dialog-color` | - |  |
-| `dialog-billing` | [KotBilling](https://github.com/MFlisar/KotBilling) | 0.6 |
+| `dialog-billing` | [KotBilling](https://github.com/MFlisar/KotBilling) | `{{ settings.kotbilling }}` |
 
 ## :simple-gradle: Setup Gradle
 

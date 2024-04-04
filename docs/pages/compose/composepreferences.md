@@ -34,8 +34,8 @@ previews: https://raw.githubusercontent.com/MFlisar/ComposePreferences/master/sc
 
 | Dependency | Version | Infos |
 |:-|-:|:-:|
-| [Compose BOM](https://developer.android.com/jetpack/compose/bom/bom){target=_blank} | `2024.02.01` | [Mapping](https://developer.android.com/jetpack/compose/bom/bom-mapping){target=_blank} |
-| Material3 | `1.2.0` | |
+| [Compose BOM](https://developer.android.com/jetpack/compose/bom/bom){target=_blank} | `{{ settings.bom }}` | [Mapping](https://developer.android.com/jetpack/compose/bom/bom-mapping){target=_blank} |
+| Material3 | `{{ settings.material3 }}` | |
 
 **Library**
 
@@ -45,14 +45,14 @@ previews: https://raw.githubusercontent.com/MFlisar/ComposePreferences/master/sc
 | **Screens** {: colspan=3 style="background-color:var(--md-primary-fg-color--light);"} | &#8288 {: style="padding:0"} | &#8288 {: style="padding:0"} |
 | `screen-bool` | - |  |
 | `screen-button` | - |  |
-| `screen-input` | [ComposeDialogs](https://github.com/MFlisar/ComposeDialogs) | 1.0.5 |
-| `screen-color` | [ComposeDialogs](https://github.com/MFlisar/ComposeDialogs) | 1.0.5 |
-| `screen-date` | [ComposeDialogs](https://github.com/MFlisar/ComposeDialogs) | 1.0.5 |
-| `screen-time` | [ComposeDialogs](https://github.com/MFlisar/ComposeDialogs) | 1.0.5 |
-| `screen-list` | [ComposeDialogs](https://github.com/MFlisar/ComposeDialogs) | 1.0.5 |
-| `screen-number` | [ComposeDialogs](https://github.com/MFlisar/ComposeDialogs) | 1.0.5 |
+| `screen-input` | [ComposeDialogs](https://github.com/MFlisar/ComposeDialogs) | `{{ settings.composedialogs }}` |
+| `screen-color` | [ComposeDialogs](https://github.com/MFlisar/ComposeDialogs) | `{{ settings.composedialogs }}` |
+| `screen-date` | [ComposeDialogs](https://github.com/MFlisar/ComposeDialogs) | `{{ settings.composedialogs }}` |
+| `screen-time` | [ComposeDialogs](https://github.com/MFlisar/ComposeDialogs) | `{{ settings.composedialogs }}` |
+| `screen-list` | [ComposeDialogs](https://github.com/MFlisar/ComposeDialogs) | `{{ settings.composedialogs }}` |
+| `screen-number` | [ComposeDialogs](https://github.com/MFlisar/ComposeDialogs) | `{{ settings.composedialogs }}` |
 | **Extensions** {: colspan=3 style="background-color:var(--md-primary-fg-color--light);"} | &#8288 {: style="padding:0"} | &#8288 {: style="padding:0"} |
-| `extension-kotpreferences` | [KotPreferences](https://github.com/MFlisar/KotPreferences) | 0.3 |
+| `extension-kotpreferences` | [KotPreferences](https://github.com/MFlisar/KotPreferences) | `{{ settings.kotpreferences }}` |
 
 ## :simple-gradle: Setup Gradle
 
