@@ -3,12 +3,6 @@ icon: simple/jetpackcompose
 library: ComposeChangelog
 demo_link: https://github.com/MFlisar/ComposeChangelog/blob/master/demo/src/main/java/com/michaelflisar/composechangelog/demo
 screenshots: https://raw.githubusercontent.com/MFlisar/ComposeChangelog/master/screenshots
-modules:
-  - core: 
-    - core
-  - statesaver:
-    - statesaver-preferences
-    - statesaver-kotpreferences
 ---
 
 {% include 'badges_header.md' %}

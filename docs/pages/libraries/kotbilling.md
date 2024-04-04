@@ -3,7 +3,6 @@ icon: material/github
 library: KotBilling
 demo_link: https://github.com/MFlisar/KotBilling/blob/master/demo/src/main/java/com/michaelflisar/kotbilling/demo
 screenshots:
-module: core
 ---
 
 {% include 'badges_header.md' %}

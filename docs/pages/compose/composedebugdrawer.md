@@ -3,15 +3,6 @@ icon: simple/jetpackcompose
 library: ComposeDebugDrawer
 demo_link: https://github.com/MFlisar/ComposeDebugDrawer/blob/master/demo/src/main/java/com/michaelflisar/composedebugdrawer/demo
 screenshots: https://raw.githubusercontent.com/MFlisar/ComposeDebugDrawer/master/screenshots
-modules:
-  - core: 
-    - core
-  - info: 
-    - infos-build
-    - infos-device
-  - plugin: 
-    - plugin-lumberjack
-    - plugin-kotpreferences
 ---
 
 {% include 'badges_header.md' %}

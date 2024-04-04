@@ -3,22 +3,6 @@ icon: material/github
 library: Lumberjack
 demo_link: https://github.com/MFlisar/Lumberjack/blob/master/demo/src/main/java/com/michaelflisar/lumberjack/demo
 screenshots: https://raw.githubusercontent.com/MFlisar/Lumberjack/master/screenshots
-modules:
-  - core: 
-    - core
-  - lumberjack:
-    - implementation-lumberjack
-    - logger-console
-    - logger-file
-  - timber:
-    - implementation-timber
-    - logger-timber-console
-    - logger-timber-file
-  - extension:
-    - extension-feedback
-    - extension-notification
-    - extension-viewer
-    - extension-composeviewer
 ---
 
 {% include 'badges_header.md' %}

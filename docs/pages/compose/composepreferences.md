@@ -4,20 +4,6 @@ library: ComposePreferences
 demo_link: https://github.com/MFlisar/ComposePreferences/blob/master/demo/src/main/java/com/michaelflisar/composepreferences/demo
 screenshots: https://raw.githubusercontent.com/MFlisar/ComposePreferences/master/screenshots/light
 previews: https://raw.githubusercontent.com/MFlisar/ComposePreferences/master/screenshots/previews
-modules:
-  - core: 
-    - core
-  - screen:
-    - screen-bool
-    - screen-button
-    - screen-input
-    - screen-color
-    - screen-date
-    - screen-time
-    - screen-list
-    - screen-number
-  - extension:
-    - extension-kotpreferences
 ---
 
 {% include 'badges_header.md' %}

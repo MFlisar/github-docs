@@ -3,11 +3,6 @@ icon: simple/jetpackcompose
 library: ComposeThemer
 demo_link: https://github.com/MFlisar/ComposeThemer/blob/master/demo/src/main/java/com/michaelflisar/Composethemer/demo
 screenshots: https://raw.githubusercontent.com/MFlisar/ComposeThemer/master/screenshots
-modules:
-  - core: 
-    - core
-  - extension:
-    - themes
 ---
 
 {% include 'badges_header.md' %}

@@ -1,7 +1,6 @@
 ---
 icon: material/github
 library: CacheFileProvider
-module: core
 ---
 
 {% include 'badges_header.md' %}

@@ -3,14 +3,6 @@ icon: material/github
 library: KotPreferences
 demo_link: https://github.com/MFlisar/KotPreferences/blob/master/demo/src/main/java/com/michaelflisar/kotpreferences/demo
 screenshots: https://raw.githubusercontent.com/MFlisar/KotPreferences/master/screenshots
-modules:
-  - core: 
-    - core
-  - storage:
-    - datastore
-    - encryption-aes
-  - extension:
-    - compose
 ---
 
 {% include 'badges_header.md' %}

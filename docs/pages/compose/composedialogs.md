@@ -3,19 +3,6 @@ icon: simple/jetpackcompose
 library: ComposeDialogs
 demo_link: https://github.com/MFlisar/ComposeDialogs/blob/master/demo/src/main/java/com/michaelflisar/composedialogs/demo
 screenshots: https://raw.githubusercontent.com/MFlisar/ComposeDialogs/master/screenshots/dark
-modules:
-  - core: 
-    - core
-  - dialog:
-    - dialog-info
-    - dialog-input
-    - dialog-number
-    - dialog-list
-    - dialog-progress
-    - dialog-time
-    - dialog-date
-    - dialog-color
-    - dialog-billing
 ---
 
 {% include 'badges_header.md' %}

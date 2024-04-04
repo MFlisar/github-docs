@@ -3,7 +3,6 @@ icon: material/github
 library: BOM
 demo_link:
 screenshots:
-module:
 ---
 
 {% include 'badges_header.md' %}
