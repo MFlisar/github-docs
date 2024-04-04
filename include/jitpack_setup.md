@@ -17,7 +17,7 @@ This library is distributed via [JitPack.io](https://jitpack.io/){target=_blank}
 
     {% if page.meta.modules == null -%}
     // add library dependency
-    implementation("com.github.MFlisar.{{ page.meta.library }}:${{ page.meta.library | lower }}")
+    implementation("com.github.MFlisar:{{ page.meta.library }}:${{ page.meta.library | lower }}")
     {% else -%}
     // include necessary modules
     {% for module in page.meta.modules %}

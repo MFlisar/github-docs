@@ -1,7 +1,6 @@
 # Project information
 site_name: Documentations
 site_url: https://mflisar.github.io/github-docs/
-
 #docs_dir: documents
 #site_dir: docs
 
@@ -118,6 +117,8 @@ nav:
   - Home: index.md
   - Open Source Projects:
     - pages/index.md
+    - BOM:
+       BOM: pages/bom/bom.md
     - Utilities:
       - pages/utilities/index.md
       - CacheFileProvider: pages/utilities/cachefileprovider.md

@@ -1,30 +1,104 @@
+BOM:
+  info: "This is BOM (billing of material) provider library that provides compatible versions for all my libraries via a BOM file."
+  image: 
 CacheFileProvider:
   info: "This is a minimal library with a **few lines of code** and without dependencies that offers a simple file provider (simple read only access for sharing files with other apps)."
-  image: 
+  image:
 FeedbackManager:
   info: "This is a very small library that allows you to **send feedback** from an app **without internet permission** via email, either directly or via an unintrusive notification."
-  image: 
+  image:
 Lumberjack:
   info: "This is a **full logging library** with a build in way to log to **console**, **file** or any **custom** place as well as optional extensions to send a log file via mail or show it on the device."
   image: https://github.com/MFlisar/Lumberjack/raw/master/screenshots/log1.png
+  modules:
+    - core: 
+      - core
+    - lumberjack:
+      - implementation-lumberjack
+      - logger-console
+      - logger-file
+    - timber:
+      - implementation-timber
+      - logger-timber-console
+      - logger-timber-file
+    - extension:
+      - extension-feedback
+      - extension-notification
+      - extension-viewer
+      - extension-composeviewer
 KotBilling:
   info: "A kotlin coroutine based solution for handling in app purchases for **billing library version 6**."
   image: 
 KotPreferences:
   info: "With this library you can declare preferences via **kotlin delegates** and observe and update them via **kotlin Flows**. This works with any storage implementation, an implementation for JetPack DataStore is provided already."
   image: 
+  modules:
+    - core: 
+      - core
+    - storage:
+      - datastore
+      - encryption-aes
+    - extension:
+      - compose
 ComposeDialogs:
   info: "This library offers you an easily extendible compose framework for modal dialogs and allows to show them as a **dialog** or a **bottom sheet**."
   image: https://github.com/MFlisar/ComposeDialogs/raw/main/screenshots/overview.jpg
+  modules:
+    - core: 
+      - core
+    - dialog:
+      - dialog-info
+      - dialog-input
+      - dialog-number
+      - dialog-list
+      - dialog-progress
+      - dialog-time
+      - dialog-date
+      - dialog-color
+      - dialog-billing
 ComposePreferences:
   info: "This library offers you **preference screens** for compose including the ability of endless nesting subscreens as well as simple integration of custom preferences."
   image: https://github.com/MFlisar/ComposePreferences/raw/main/screenshots/overview.jpg
+  modules:
+    - core: 
+      - core
+    - screen:
+      - screen-bool
+      - screen-button
+      - screen-input
+      - screen-color
+      - screen-date
+      - screen-time
+      - screen-list
+      - screen-number
+    - extension:
+      - extension-kotpreferences
 ComposeChangelog:
   info: "This library offers you a a **changelog dialog** for compose including the ability to show new logs on app start only as well as filtering and customisation."
   image: https://github.com/MFlisar/ComposeChangelog/raw/main/screenshots/overview.jpg
+  modules:
+    - core: 
+      - core
+    - statesaver:
+      - statesaver-preferences
+      - statesaver-kotpreferences
 ComposeThemer:
   info: "This is a **full compose theme engine** that handles applying a theme as well as updating the system ui elements. Extendible and allows to simply apply user selected themes inside your app."
   image: https://github.com/MFlisar/ComposeThemer/raw/main/screenshots/demo.gif
+  modules:
+    - core: 
+      - core
+    - extension:
+      - themes
 ComposeDebugDrawer:
   info: "This library offers you a **simple** and easily extendable **debug drawer**."
   image: https://github.com/MFlisar/ComposeDebugDrawer/raw/main/screenshots/demo2.jpg
+  modules:
+    - core: 
+      - core
+    - info: 
+      - infos-build
+      - infos-device
+    - plugin: 
+      - plugin-lumberjack
+      - plugin-kotpreferences

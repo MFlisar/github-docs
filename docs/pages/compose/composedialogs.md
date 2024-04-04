@@ -6,7 +6,7 @@ screenshots: https://raw.githubusercontent.com/MFlisar/ComposeDialogs/master/scr
 modules:
   - core: 
     - core
-  - dialogs:
+  - dialog:
     - dialog-info
     - dialog-input
     - dialog-number
