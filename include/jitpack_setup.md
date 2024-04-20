@@ -30,6 +30,8 @@ This library is distributed via [JitPack.io](https://jitpack.io/){target=_blank}
     
     ```
 
+<!---
 !!! tip "BOM"
 
     Consider using my [BOM Library](../bom/bom.md) to manage my libraries versions, especially if you use more than one of my libraries.
+-->

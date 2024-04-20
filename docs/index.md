@@ -13,10 +13,13 @@ Check out the [open source projects](pages/index.md) section to see all the proj
 
 ## :material-table: Overview
 
-|Image|Library|Description|
-|-|-|-|
+<!--
 | **BOM** {: colspan=3 style="background-color:var(--md-primary-fg-color--light);"} | &#8288 {: style="padding:0"} | &#8288 {: style="padding:0"} |
 {% set lib = 'BOM' %}{% set type = 'bom' %}{% include 'index_table_row.md' %}
+-->
+
+|Image|Library|Description|
+|-|-|-|
 | **Utilities** {: colspan=3 style="background-color:var(--md-primary-fg-color--light);"} | &#8288 {: style="padding:0"} | &#8288 {: style="padding:0"} |
 {% set lib = 'CacheFileProvider' %}{% set type = 'utilities' %}{% include 'index_table_row.md' %}
 {% set lib = 'FeedbackManager' %}{% set type = 'utilities' %}{% include 'index_table_row.md' %}

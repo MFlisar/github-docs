@@ -117,8 +117,8 @@ nav:
   - Home: index.md
   - Open Source Projects:
     - pages/index.md
-    - BOM:
-      - BOM: pages/bom/bom.md
+    #- BOM:
+    #  - BOM: pages/bom/bom.md
     - Utilities:
       - pages/utilities/index.md
       - CacheFileProvider: pages/utilities/cachefileprovider.md
