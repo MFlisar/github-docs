@@ -1,4 +1,7 @@
 # [{{ page.title }}](https://github.com/MFlisar/{{ page.meta.library }})
+
+[Open in GitHub](https://github.com/MFlisar/{{ page.meta.library }}){target=_blank}
+
 <!--
 <a href="https://github.com/MFlisar/{{ page.meta.library }}" target="_blank"><img alt="Github" src="https://img.shields.io/badge/Github-444444?style=for-the-badge&amp;logo=github&amp;logoColor=white"></a> <a href="https://jitpack.io/#MFlisar/{{ page.meta.library }}" target="_blank"><img alt="Jitpack" src="https://img.shields.io/badge/Jitpack-888888?style=for-the-badge&amp;logo=github&amp;logoColor=white"></a> 
 -->
@@ -16,3 +19,4 @@
 <!--
 ![Size](https://img.shields.io/github/repo-size/mflisar/{{ page.meta.library }}?style=for-the-badge&labelColor=f00&color=444444)
 -->
+
