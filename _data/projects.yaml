@@ -7,9 +7,19 @@ CacheFileProvider:
 FeedbackManager:
   info: "This is a very small library that allows you to **send feedback** from an app **without internet permission** via email, either directly or via an unintrusive notification."
   image:
+  dependencies:
+    cachefileprovider: 0.3.1
 Lumberjack:
   info: "This is a **full logging library** with a build in way to log to **console**, **file** or any **custom** place as well as optional extensions to send a log file via mail or show it on the device."
   image: https://github.com/MFlisar/Lumberjack/raw/master/screenshots/log1.png
+  dependencies:
+    bom: 2024.04.00
+    material3: 1.2.1
+    feedbackmanager: 2.0.5
+    timber: 4.7.1
+    slf4j: 2.0.7
+    logback-android: 3.0.0
+    fastscroller: 1.0.0
   modules:
     - core: 
       - core
@@ -29,6 +39,8 @@ Lumberjack:
 KotBilling:
   info: "A kotlin coroutine based solution for handling in app purchases for **billing library version 6**."
   image: 
+  dependencies:
+    billing: 6.0.1
 KotPreferences:
   info: "With this library you can declare preferences via **kotlin delegates** and observe and update them via **kotlin Flows**. This works with any storage implementation, an implementation for JetPack DataStore is provided already."
   image: 
@@ -43,6 +55,10 @@ KotPreferences:
 ComposeDialogs:
   info: "This library offers you an easily extendible compose framework for modal dialogs and allows to show them as a **dialog** or a **bottom sheet**."
   image: https://github.com/MFlisar/ComposeDialogs/raw/main/screenshots/overview.jpg
+  dependencies:
+    bom: 2024.04.00
+    material3: 1.2.1
+    kotbilling: 0.7
   modules:
     - core: 
       - core
@@ -59,6 +75,11 @@ ComposeDialogs:
 ComposePreferences:
   info: "This library offers you **preference screens** for compose including the ability of endless nesting subscreens as well as simple integration of custom preferences."
   image: https://github.com/MFlisar/ComposePreferences/raw/main/screenshots/overview.jpg
+  dependencies:
+    bom: 2024.04.00
+    material3: 1.2.1
+    kotpreferences: 0.5
+    composedialogs: 1.0.7
   modules:
     - core: 
       - core
@@ -76,6 +97,10 @@ ComposePreferences:
 ComposeChangelog:
   info: "This library offers you a a **changelog dialog** for compose including the ability to show new logs on app start only as well as filtering and customisation."
   image: https://github.com/MFlisar/ComposeChangelog/raw/main/screenshots/overview.jpg
+  dependencies:
+    bom: 2024.04.00
+    material3: 1.2.1
+    kotpreferences: 0.5
   modules:
     - core: 
       - core
@@ -85,6 +110,9 @@ ComposeChangelog:
 ComposeThemer:
   info: "This is a **full compose theme engine** that handles applying a theme as well as updating the system ui elements. Extendible and allows to simply apply user selected themes inside your app."
   image: https://github.com/MFlisar/ComposeThemer/raw/main/screenshots/demo.gif
+  dependencies:
+    bom: 2024.04.00
+    material3: 1.2.1
   modules:
     - core: 
       - core
@@ -93,6 +121,11 @@ ComposeThemer:
 ComposeDebugDrawer:
   info: "This library offers you a **simple** and easily extendable **debug drawer**."
   image: https://github.com/MFlisar/ComposeDebugDrawer/raw/main/screenshots/demo2.jpg
+  dependencies:
+    bom: 2024.04.00
+    material3: 1.2.1
+    kotpreferences: 0.5
+    lumberjack: 6.0.6
   modules:
     - core: 
       - core

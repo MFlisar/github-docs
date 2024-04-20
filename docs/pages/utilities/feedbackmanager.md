@@ -18,7 +18,7 @@ library: FeedbackManager
 
 | Dependency | Version |
 |:-|-:|
-| [CacheFileProvider](https://github.com/MFlisar/CacheFileProvider) | `{{ settings.cachefileprovider }}` |
+| [CacheFileProvider](https://github.com/MFlisar/CacheFileProvider) | `{{ projects[page.meta.library]['dependencies']['cachefileprovider'] }}` |
 
 ## :simple-gradle: Setup Gradle
 

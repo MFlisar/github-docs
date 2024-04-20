@@ -98,7 +98,6 @@ plugins:
       include_dir: include
       include_yaml:
         - projects: _data/projects.yaml
-        - settings: _data/settings.yaml
   - glightbox:
       skip_classes:
          - exclude-glightbox

@@ -27,6 +27,7 @@ screenshots: https://raw.githubusercontent.com/MFlisar/ComposeChangelog/master/s
     * you can provide a custom sorter
 * supports raw and xml resources, default resource name is `changelog.xml` in raw folder
 * supports summaries with a "show more" button
+* optional provides a `gradle plugin` that allows you to convert version names automatically to version numbers
 
 **All features are splitted into separate modules, just include the modules you want to use!**
 
@@ -34,10 +35,12 @@ screenshots: https://raw.githubusercontent.com/MFlisar/ComposeChangelog/master/s
 
 **Compose**
 
+BOM: 
+
 | Dependency | Version | Infos |
 |:-|-:|:-:|
-| [Compose BOM](https://developer.android.com/jetpack/compose/bom/bom){target=_blank} | `{{ settings.bom }}` | [Mapping](https://developer.android.com/jetpack/compose/bom/bom-mapping){target=_blank} |
-| Material3 | `{{ settings.material3 }}` | |
+| [Compose BOM](https://developer.android.com/jetpack/compose/bom/bom){target=_blank} | `{{ projects[page.meta.library]['dependencies']['bom'] }}` | [Mapping](https://developer.android.com/jetpack/compose/bom/bom-mapping){target=_blank} |
+| Material3 | `{{ projects[page.meta.library]['dependencies']['material3'] }}` | |
 
 **Library**
 
@@ -46,7 +49,9 @@ screenshots: https://raw.githubusercontent.com/MFlisar/ComposeChangelog/master/s
 | `core` | - |  |
 | **Extensions** {: colspan=3 style="background-color:var(--md-primary-fg-color--light);"} | &#8288 {: style="padding:0"} | &#8288 {: style="padding:0"} |
 | `statesaver-preferences` | - |  |
-| `statesaver-kotpreferences` | [KotPreferences](https://github.com/MFlisar/KotPreferences) | `{{ settings.kotpreferences }}` |
+| `statesaver-kotpreferences` | [KotPreferences](https://github.com/MFlisar/KotPreferences) | `{{ projects[page.meta.library]['dependencies']['kotpreferences'] }}` |
+| **Plugins** {: colspan=3 style="background-color:var(--md-primary-fg-color--light);"} | &#8288 {: style="padding:0"} | &#8288 {: style="padding:0"} |
+| `gradle-plugin` | - |  |
 
 ## :simple-gradle: Setup Gradle
 
@@ -60,7 +65,12 @@ It works as simple as following:
 
     ```xml title="raw/changelog.xml"
     <changelog>
-        <release versionCode="120" date="2023-03-04">
+    
+        <!-- with version names -->
+        <release versionName="1.2.1" date="2024-04-20">
+            <new type="summary">-new gradle plugin added - you don't need to convert version names to version codes anymore!</new>
+        </release>
+        <release versionName="1.2.0" date="2023-03-04">
             <info>Some info 1 - apostrophe test: it's weird, but apostrophes do not work in precompiled xml files placed in xml resources!</info>
             <new type="summary">Some improvement 1</new>
             <bugfix>Some bugfix 1</bugfix>
@@ -72,6 +82,8 @@ It works as simple as following:
             <bugfix>Some bugfix 3</bugfix>
             <customTag>My custom tag text...</customTag>
         </release>
+
+        <!-- with version codes --> 
         <release versionCode="118" date="2023-03-04">
             <new type="summary">This version has a summary item only - no show more button will be shown even if show more buttons are enabled</new>
         </release>
@@ -149,3 +161,71 @@ It works as simple as following:
 ## :dna: Demo
 
 {% include 'github_demo.md' %}
+
+## :material-professional-hexagon: Advanced Usage
+
+If you want to you can simply use the new `gradle-plugin` module. Following shows it's usage and advantages:
+
+???+ code "Using the gradle plugin"
+
+    - Project `build.gradle.kts` file:
+
+    ```kotlin
+    buildscript {
+        repositories {
+            // repositories
+            // ...
+        }
+        dependencies {
+            // your classpaths...
+            // ...
+
+            // classpath for the gradle plugin of comose changelog
+            classpath("com.github.MFlisar.ComposeChangelog:gradle-plugin:<VERSION>")
+        }
+    }
+    ```
+
+    After adding above you can simple apply the plugin inside your apps `build.gradle.kts` file like following and use it like following:
+
+    ```kotlin
+    import com.michaelflisar.composechangelog.gradle.plugin.Changelog
+    import com.michaelflisar.composechangelog.DefaultVersionFormatter
+
+    plugins {
+        // other plugins
+        id("com.android.application")
+        id("kotlin-android")
+        id("kotlin-kapt")
+
+        // plugin of compose changelog
+        id("compose-changelog")
+    }
+
+    // define your app version code based on your format, here we use the Major.Minor.Patch format
+    val version = "0.3.0"
+    val code = Changelog.buildVersionCode(version, DefaultVersionFormatter(DefaultVersionFormatter.Format.MajorMinorPatch))
+
+    // make sure to use the SAME formatter inside your code whenever you want to show a changelog - Major.Minor.Patch format is the default one though
+
+    android {
+
+        // ...
+
+        defaultConfig {
+            // use the version and code variables from above
+            versionCode = code
+            versionName = version
+        }
+
+         // ...
+    }
+    ```
+
+    You now only must change `val version = "0.3.0"` to whatever new version you want and the code will be calculated by itself.
+
+    Additionally you can easily use the `versionName` tag inside your `changelog.xml` file, the formatter will correctly parse it to it's number for you.
+
+!!! info-primary "Information"
+
+    Always make sure to use the same formatter in your `build.gradle.kts` as well as inside your code.
