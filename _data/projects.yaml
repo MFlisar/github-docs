@@ -78,7 +78,7 @@ ComposePreferences:
   dependencies:
     bom: 2024.04.00
     material3: 1.2.1
-    kotpreferences: 0.5
+    kotpreferences: 0.5.1
     composedialogs: 1.0.7
   modules:
     - core: 
@@ -100,7 +100,7 @@ ComposeChangelog:
   dependencies:
     bom: 2024.04.00
     material3: 1.2.1
-    kotpreferences: 0.5
+    kotpreferences: 0.5.1
   modules:
     - core: 
       - core
@@ -124,8 +124,8 @@ ComposeDebugDrawer:
   dependencies:
     bom: 2024.04.00
     material3: 1.2.1
-    kotpreferences: 0.5
-    lumberjack: 6.0.6
+    kotpreferences: 0.5.1
+    lumberjack: 6.0.7
   modules:
     - core: 
       - core

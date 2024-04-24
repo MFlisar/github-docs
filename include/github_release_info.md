@@ -1,1 +1,1 @@
-![Latest Release](https://img.shields.io/jitpack/version/com.github.MFlisar/{{ lib }}?label=&style=for-the-badge&labelColor=444444&color=grey){ .exclude-glightbox } 
+[![Latest Release](https://img.shields.io/jitpack/version/com.github.MFlisar/{{ lib }}?label=&style=for-the-badge&labelColor=444444&color=grey)](https://github.com/MFlisar/{{ lib }}){target=_blank}
