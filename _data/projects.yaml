@@ -79,7 +79,7 @@ ComposePreferences:
     bom: 2024.04.00
     material3: 1.2.1
     kotpreferences: 0.5.1
-    composedialogs: 1.0.7
+    composedialogs: 1.0.8
   modules:
     - core: 
       - core
