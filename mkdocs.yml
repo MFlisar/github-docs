@@ -135,3 +135,4 @@ nav:
       - ComposeChangelog: pages/compose/composechangelog.md
       - ComposeThemer: pages/compose/composethemer.md
       - ComposeDebugDrawer: pages/compose/composedebugdrawer.md
+  - Support: support.md

@@ -1,5 +1,11 @@
 # Github Docs
 
+* Run
+
+    ```
+    mkdocs serve
+    ```
+
 ### MkDocs (Material)
 
 * [Customisation](https://squidfunk.github.io/mkdocs-material/setup/)
