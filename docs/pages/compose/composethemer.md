@@ -114,12 +114,12 @@ There only exists on very small extension for this library.
     I added some extensions to `SystemBarStyle.Companion`.
 
     ```kotlin
-   // following gives you a fully transparent SystemBarStyle or the default SystemBarStyle for the statusbar or navigationbar
-   SystemBarStyle.transparent()
-   SystemBarStyle.statusBar()
-   SystemBarStyle.navigationBar()
-   // this gives you the default scrim color that is normally defined privately aand can't be easily accessed
-   SystemBarStyle.defaultScrim(resource)
+    // following gives you a fully transparent SystemBarStyle or the default SystemBarStyle for the statusbar or navigationbar
+    SystemBarStyle.transparent()
+    SystemBarStyle.statusBar()
+    SystemBarStyle.navigationBar()
+    // this gives you the default scrim color that is normally defined privately aand can't be easily accessed
+    SystemBarStyle.defaultScrim(resource)
     ```
 
 ??? info-primary "Disable the edgeToEdge mode"
