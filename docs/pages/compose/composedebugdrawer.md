@@ -189,20 +189,32 @@ It works as simple as following:
 
     This simple module allows you to use my delegate based preference library *KotPreferences* inside the debug drawer. With this extension labels are e.g. directly derived from the `KotPreference` property. It offers overloads for `Checkbox`, `Dropdown` and `SegmentedButton` debug drawer fields.
 
-    ```kotlin title="DebugDrawerKotPreferences.kt"
+    ```kotlin title="DebugDrawerSettingCheckbox.kt"
     --8<--
-     https://raw.githubusercontent.com/MFlisar/ComposeDebugDrawer/main/library/plugins/kotpreferences/src/main/java/com/michaelflisar/composedebugdrawer/plugin/kotpreferences/DebugDrawerKotPreferences.kt:19:26
+     https://raw.githubusercontent.com/MFlisar/ComposeDebugDrawer/main/library/plugins/kotpreferences/src/main/java/com/michaelflisar/composedebugdrawer/plugin/kotpreferences/DebugDrawerSettingCheckbox.kt:17:24
     --8<--
-    ```
-
-    ```kotlin title="DebugDrawerKotPreferences.kt"
+    
     --8<--
-     https://raw.githubusercontent.com/MFlisar/ComposeDebugDrawer/main/library/plugins/kotpreferences/src/main/java/com/michaelflisar/composedebugdrawer/plugin/kotpreferences/DebugDrawerKotPreferences.kt:45:51
+     https://raw.githubusercontent.com/MFlisar/ComposeDebugDrawer/main/library/plugins/kotpreferences/src/main/java/com/michaelflisar/composedebugdrawer/plugin/kotpreferences/DebugDrawerSettingCheckbox.kt:29:36
     --8<--
     ```
 
-    ```kotlin title="DebugDrawerKotPreferences.kt"
+    ```kotlin title="DebugDrawerSettingDropdown.kt"
     --8<--
-     https://raw.githubusercontent.com/MFlisar/ComposeDebugDrawer/main/library/plugins/kotpreferences/src/main/java/com/michaelflisar/composedebugdrawer/plugin/kotpreferences/DebugDrawerKotPreferences.kt:71:76
+     https://raw.githubusercontent.com/MFlisar/ComposeDebugDrawer/main/library/plugins/kotpreferences/src/main/java/com/michaelflisar/composedebugdrawer/plugin/kotpreferences/DebugDrawerSettingDropdown.kt:16:22
+    --8<--
+
+    --8<--
+     https://raw.githubusercontent.com/MFlisar/ComposeDebugDrawer/main/library/plugins/kotpreferences/src/main/java/com/michaelflisar/composedebugdrawer/plugin/kotpreferences/DebugDrawerSettingDropdown.kt:27:33
+    --8<--
+    ```
+
+    ```kotlin title="DebugDrawerSettingSegmentedButtons.kt"
+    --8<--
+     https://raw.githubusercontent.com/MFlisar/ComposeDebugDrawer/main/library/plugins/kotpreferences/src/main/java/com/michaelflisar/composedebugdrawer/plugin/kotpreferences/DebugDrawerSettingSegmentedButtons.kt:16:21
+    --8<--
+
+    --8<--
+     https://raw.githubusercontent.com/MFlisar/ComposeDebugDrawer/main/library/plugins/kotpreferences/src/main/java/com/michaelflisar/composedebugdrawer/plugin/kotpreferences/DebugDrawerSettingSegmentedButtons.kt:26:31
     --8<--
     ```
