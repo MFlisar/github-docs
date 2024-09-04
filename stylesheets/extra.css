@@ -1,0 +1,79 @@
+/*
+* CUSTOM COLORS
+*/
+
+:root {
+    --color-info-bg: #383838;
+    --color-info-bg-alpha: #3838381a;
+    --color-info-fg: #ffffff;
+
+    --color-info-primary-bg: #63de17;
+    --color-info-primary-bg-alpha: #63de171a;
+    --color-info-primary-fg: #ffffff;
+
+    [data-md-color-scheme="slate"]{
+        --color-info-bg: #ccc;
+        --color-info-bg-alpha: #cccccc1a;
+        --color-info-fg: #ffffff;
+    }
+}
+
+/* ----------------------
+   Custom Code Admonition
+------------------------- */
+
+:root {
+    --md-admonition-icon--code: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4m-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4Z"/></svg>')
+}
+
+.md-typeset .admonition.code,
+.md-typeset details.code{
+    border-color: var(--color-info-bg)
+}.md-typeset .admonition.code:focus-within,
+.md-typeset details.code:focus-within{
+    box-shadow:0 0 0 .2rem var(--color-info-bg-alpha)
+}
+.md-typeset .code>.admonition-title,
+.md-typeset .code>summary{
+    background-color:var(--color-info-bg-alpha)
+}
+.md-typeset .code>.admonition-title:before,
+.md-typeset .code>summary:before{
+    background-color:var(--color-info-bg);
+    -webkit-mask-image:var(--md-admonition-icon--code);
+    mask-image:var(--md-admonition-icon--code)
+}
+.md-typeset .code>.admonition-title:after,
+.md-typeset .code>summary:after{
+    color:var(--color-info-bg)
+}
+
+/* ----------------------
+   Custom Info Admonition
+------------------------- */
+
+:root {
+    --md-admonition-icon--info-primary: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 9h2V7h-2m1 13c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-18A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m-1 15h2v-6h-2v6Z"/></svg>')
+}
+
+.md-typeset .admonition.info-primary,
+.md-typeset details.info-primary{
+    border-color: var(--color-info-primary-bg)
+}.md-typeset .admonition.info-primary:focus-within,
+.md-typeset details.info-primary:focus-within{
+    box-shadow:0 0 0 .2rem var(--color-info-primary-bg-alpha)
+}
+.md-typeset .info-primary>.admonition-title,
+.md-typeset .info-primary>summary{
+    background-color:var(--color-info-primary-bg-alpha)
+}
+.md-typeset .info-primary>.admonition-title:before,
+.md-typeset .info-primary>summary:before{
+    background-color:var(--color-info-primary-bg);
+    -webkit-mask-image:var(--md-admonition-icon--info-primary);
+    mask-image:var(--md-admonition-icon--info-primary)
+}
+.md-typeset .info-primary>.admonition-title:after,
+.md-typeset .info-primary>summary:after{
+    color:var(--color-info-primary-bg)
+}
