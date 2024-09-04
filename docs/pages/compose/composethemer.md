@@ -22,6 +22,7 @@ screenshots: https://raw.githubusercontent.com/MFlisar/ComposeThemer/master/scre
 * supports system ui theming (status bar + navigation bar)
 * build on top of `MaterialTheme`
 * comes with optional *55 build-in themes*
+* offers some edgeToEdge helper functions
 
 **All features are splitted into separate modules, just include the modules you want to use!**
 
@@ -44,10 +45,14 @@ class App : Application() {
     override fun onCreate() {
 
         // register all available themes or register your custom themes
+        ComposeTheme.register(*ComposeThemes.ALL.toTypedArray())
+
+        // OR register some of them (or even your own ones)
         ComposeTheme.register(
-            *ComposeThemes
-                .getAll()
-                .toTypedArray()
+            ThemeAmberBlue.get(),
+            ThemeAquaBlue.get(),
+            ThemeBahamaAndTrinidad.get(),
+            // ...
         )
     }
 
@@ -63,6 +68,20 @@ val dynamic = remember { mutableStateOf(false) }
 val theme = remember { mutableStateOf("green") } // the key of an registered theme
 val state = ComposeTheme.State(baseTheme, dynamic, theme)
 ComposeTheme(state = state) {
+
+    // update edgeToEdge to the correct styles with the provided helper functions
+    // e.g. like following if the layout has a primary toolbar at top and nothing at bottom
+    // TIPP:
+    // this functions has an overload that works with SystemBarStyle instead if you want to use that directly
+    ComposeTheme.enableEdgeToEdge(
+        activity = this,
+        statusBarColor = MaterialTheme.colorScheme.primary,
+        navigationBarColor = if (landscape) {
+            SystemBarStyle.defaultScrim(resources)
+        } else MaterialTheme.colorScheme.background,
+        isNavigationBarContrastEnforced = landscape
+    )
+
     // content
 }
 ```
@@ -90,22 +109,25 @@ There only exists on very small extension for this library.
 
 ## :material-professional-hexagon: Advanced Usage
 
-??? info-primary "Custom Statusbar / Navigationbar Colors"
+??? info-primary "SystemBarStyle extensions"
 
-    The default themes do use functions that allow you to define some custom statusbar / navigation settings if desired. Supported colors are `default`, `primary` and `surface` (those colors derive their color from the theme itself) or `custom` for fully user defined colors.
+    I added some extensions to `SystemBarStyle.Companion`.
 
     ```kotlin
-    // get all themes with custom statusbar / navigation bar
-    ComposeTheme.getRegisteredThemes(
-        statusBarColor = ComposeTheme.SystemUIColor.Surface,
-        navigationBarColor = ComposeTheme.SystemUIColor.Surface
-    )
+   SystemBarStyle.transparent()
+   SystemBarStyle.statusBar()
+   SystemBarStyle.navigationBar()
+   SystemBarStyle.defaultScrim(resource)
+    ```
 
-    // or get a single predefined theme with custom statusbar / navigation bar
-    val theme = ThemeAmberBlue.get(
-        statusBarColor = ComposeTheme.SystemUIColor.Surface,
-        navigationBarColor = ComposeTheme.SystemUIColor.Surface
-    )
+??? info-primary "Disable the edgeToEdge mode"
+
+    If desired, you can still use this library without using the edgeToEdge feature.
+
+    ```kotlin
+    ComposeTheme(state = state, edgeToEdge = false) {
+        // content
+    }
     ```
 
 ## :material-handshake: Credits
